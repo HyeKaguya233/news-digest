@@ -5,6 +5,11 @@ on:
     # UTC 00:00 = 北京时间 08:00。想换时间就改小时（北京时间 = UTC + 8）。
     - cron: "0 0 * * *"
   workflow_dispatch:
+    inputs:
+      query:
+        description: "可选：输入关键词立即搜索；留空则生成每日简报"
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -37,4 +42,7 @@ jobs:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
           WECHAT_RSS_URL: ${{ vars.WECHAT_RSS_URL }}
+          USER_PROFILE: ${{ vars.USER_PROFILE }}
+          INTEREST_QUERIES: ${{ vars.INTEREST_QUERIES }}
+          SEARCH_QUERY: ${{ github.event.inputs.query }}
         run: python fetch_news.py
