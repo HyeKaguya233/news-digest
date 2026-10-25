@@ -39,12 +39,19 @@ jobs:
           FEED_OUT: latest.json
           BARK_KEY: ${{ secrets.BARK_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY || secrets.DS }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
           QMSG_KEY: ${{ secrets.QMSG_KEY }}
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
           WECHAT_RSS_URL: ${{ vars.WECHAT_RSS_URL }}
           USER_PROFILE: ${{ vars.USER_PROFILE }}
           INTEREST_QUERIES: ${{ vars.INTEREST_QUERIES }}
+          PARTNER_PROFILE: ${{ vars.PARTNER_PROFILE }}
+          PARTNER_INTEREST_QUERIES: ${{ vars.PARTNER_INTEREST_QUERIES }}
+          RECOMMEND_TITLE: ${{ vars.RECOMMEND_TITLE }}
+          PARTNER_RECOMMEND_TITLE: ${{ vars.PARTNER_RECOMMEND_TITLE }}
           SEARCH_QUERY: ${{ github.event.inputs.query }}
         run: python fetch_news.py
 
