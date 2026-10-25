@@ -1,0 +1,31 @@
+name: keepalive
+
+on:
+  schedule:
+    # UTC 03:00 on the 1st = Beijing 11:00 on the 1st.
+    - cron: "0 3 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: keepalive
+  cancel-in-progress: false
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Record repository activity
+        run: |
+          mkdir -p .github
+          printf '%s\n' "$(date -u +'%Y-%m-%dT%H:%M:%SZ') keepalive" >> .github/keepalive.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/keepalive.txt
+          git commit -m "chore: keep scheduled workflows active"
+          git push
