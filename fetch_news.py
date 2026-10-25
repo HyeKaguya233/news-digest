@@ -888,6 +888,55 @@ def render_markdown(
     return "\n".join(lines).strip()
 
 
+def write_feed(path: str, sections, now, title: str, highlights, errors):
+    """写出给桌面客户端使用的结构化日报。"""
+    items = [
+        {
+            "title": item["title"],
+            "url": item["url"],
+            "note": item.get("note") or "",
+        }
+        for section in sections
+        for item in section["items"]
+    ]
+    payload = {
+        "schema": 1,
+        "kind": "daily",
+        "date": now.strftime("%Y-%m-%d"),
+        "generated_at": now.isoformat(timespec="seconds"),
+        "title": title,
+        "heading": "每日简报",
+        "highlights": list(highlights or []),
+        "count": len(items),
+        "sections": [
+            {
+                "key": section["key"],
+                "icon": section["icon"],
+                "title": section["title"],
+                "items": [
+                    {
+                        "title": item["title"],
+                        "url": item["url"],
+                        "note": item.get("note") or "",
+                    }
+                    for item in section["items"]
+                ],
+            }
+            for section in sections
+            if section["items"]
+        ],
+        "skipped": list(errors or []),
+    }
+    target = os.path.abspath(path)
+    parent = os.path.dirname(target)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
+    with open(target, "w", encoding="utf-8") as handle:
+        json.dump(payload, handle, ensure_ascii=False, indent=2)
+        handle.write("\n")
+    log(f"[Feed] 已写入 {target}（{len(items)} 条）")
+
+
 # ---------------------------------------------------------------- 推送
 
 
@@ -1077,6 +1126,13 @@ def main() -> int:
         sections, highlights = reviewed
     total = sum(len(section["items"]) for section in sections)
     max_len = int(os.environ.get("QMSG_MAX_LEN", "1700"))
+
+    feed_out = os.environ.get("FEED_OUT", "").strip()
+    if feed_out and not search_query and total >= 3:
+        try:
+            write_feed(feed_out, sections, now, title, highlights, errors)
+        except Exception as exc:  # noqa: BLE001
+            log(f"[Feed] 写入失败：{exc}")
 
     if total < 3:
         if search_query:
