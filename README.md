@@ -100,6 +100,17 @@
 打开 **Actions → daily-news-digest → Run workflow**，在 `query` 里输入关键词再运行。
 填写后不会抓常规热榜，只搜索该关键词并把结果推送到 Bark。留空则照常生成每日简报。
 
+### Windows 桌面通知（可选）
+
+每次生成日报后，工作流还会把结构化内容写到仓库根目录的 `latest.json`。
+Windows 客户端会定时读取这个文件，在新一期到达时弹出系统通知；点击通知可打开完整简报。
+
+- 默认订阅地址：`https://raw.githubusercontent.com/HyeKaguya233/news-digest/main/latest.json`
+- 客户端源代码和打包脚本：`work/news-desktop/`（本地工作区，不参与 Actions）
+- 双击 `NewsDigest.exe` 后常驻托盘，默认开机启动；托盘菜单可立即检查、打开简报、退出。
+- 首次运行会在 `%APPDATA%\NewsDigest\` 生成 `config.json`，可改 `feed_urls`、`poll_seconds`。
+- 如果 GitHub Raw 访问不稳定，客户端会按顺序回退到 jsDelivr。
+
 ### 5. 先手动跑一次
 
 **Actions → daily-news-digest → Run workflow**。等 1 分钟左右看日志，
