@@ -48,6 +48,7 @@ Windows 托盘客户端和 AI Skill 使用。
 .
 ├── .github/workflows/
 │   ├── daily.yml                 # 每天 10:30 北京时间抓取、推送、更新 latest.json
+│   ├── import-project.yml        # 手动构建 Windows 客户端（历史文件名）
 │   └── keepalive.yml             # 每月保活，降低长期无提交导致定时任务暂停的风险
 ├── fetch_news.py                 # 抓取、规则清洗、双画像、AI 评审、推送、Feed 输出
 ├── requirements.txt              # 服务端依赖
@@ -144,6 +145,7 @@ Skill 位于 `skills/daily-news-digest/SKILL.md`，用途是把 `latest.json` �
 - 首次运行可能触发 SmartScreen；未签名程序可选择「更多信息 → 仍要运行」。
 - 客户端不包含 Bark、Qmsg、DeepSeek 等任何服务端密钥。
 - 托盘菜单可以立即检查、打开简报或退出；只允许单实例运行。
+- 也可以在 **Actions → build-windows-client → Run workflow** 在线构建并下载 EXE 构件。
 
 构建方法见 `desktop/build.ps1` 和 `desktop/README.md`。
 
