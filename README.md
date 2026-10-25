@@ -106,8 +106,7 @@
 Windows 客户端会定时读取这个文件，在新一期到达时弹出系统通知；点击通知可打开完整简报。
 
 - 默认订阅地址：`https://raw.githubusercontent.com/HyeKaguya233/news-digest/main/latest.json`
-- 客户端源代码和打包脚本：`work/news-desktop/`（本地工作区，不参与 Actions）
-- 双击 `NewsDigest.exe` 后常驻托盘，默认开机启动；托盘菜单可立即检查、打开简报、退出。
+- 客户端是单文件 `NewsDigest.exe`，双击后常驻托盘，默认开机启动；托盘菜单可立即检查、打开简报、退出。
 - 首次运行会在 `%APPDATA%\NewsDigest\` 生成 `config.json`，可改 `feed_urls`、`poll_seconds`。
 - 如果 GitHub Raw 访问不稳定，客户端会按顺序回退到 jsDelivr。
 
