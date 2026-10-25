@@ -2,16 +2,16 @@
   "schema": 1,
   "kind": "daily",
   "date": "2026-10-26",
-  "generated_at": "2026-10-26T00:09:58+08:00",
+  "generated_at": "2026-10-26T00:20:14+08:00",
   "title": "每日简报 10-26",
   "heading": "每日简报",
-  "briefing": "今天最值得关注：GM 明确要在皮卡和 SUV 上推进“脱眼”自动驾驶，自动驾驶量产节奏再进一步；DJI Osmo Pocket 4P 评测与多款无人机固件更新，直接关系到手持影像产品竞争。技术侧还有 Arduino 低价 USB 相机降低视觉开发门槛，GitHub 上本地语音与 AI 代理项目热度高。第二位读者可看 DaVinci Resolve 特惠、Blackmagic 转播车案例，以及多发性硬化诊疗二十年变迁综述；医疗纠纷报道事实清楚但需克制看待。海外方面巴西大选进入第二轮、法国抗议逮捕人数与俄乌谈判信号值得留意。",
+  "briefing": "今天值得关注的技术与产业动向：GM 明确要在皮卡和 SUV 上推进“可脱眼”自动驾驶，DJI 为 Mini 5 Pro、Air 3S、Mavic 4 Pro 推送新固件，Osmo Pocket 4P 评测与 OPPO 三颗 200MP 影像方案也值得影像从业者留意。影视方面，Blackmagic 推出 DaVinci Resolve Studio 特惠，国内首部 AI 电影即将上映，AI 进入院线电影的成本与可行性成为讨论焦点。医疗侧，多发性硬化诊疗二十年变迁的综述提供了疾病进展与复发关系的新观察；患者送汽水后举报收礼一事获人民日报评论，医疗纠纷话题持续。海外方面，巴西大选进入第二轮，沙特拦截胡塞导弹并恢复部分机场运营。",
   "highlights": [
-    "GM 推进皮卡与 SUV 脱眼自动驾驶",
-    "DJI Osmo Pocket 4P 评测：面向半专业创作者",
-    "多款 DJI 无人机发布新固件",
-    "DaVinci Resolve Studio 推出特惠活动",
-    "多发性硬化诊疗二十年变迁综述发布"
+    "GM 推进皮卡与 SUV 的“可脱眼”自动驾驶",
+    "DJI 多款无人机推送新固件",
+    "国内首部 AI 电影即将上映",
+    "多发性硬化诊疗二十年变迁综述发布",
+    "巴西总统选举进入第二轮投票"
   ],
   "count": 43,
   "sections": [
@@ -23,38 +23,38 @@
         {
           "title": "GM targets ‘eyes-off’ autonomous driving for pickups, SUVs",
           "url": "https://is.gd/jTFPCe",
-          "note": "脱眼自动驾驶落地皮卡与SUV",
+          "note": "通用明确皮卡SUV脱眼自动驾驶路线",
           "source": "Reuters"
-        },
-        {
-          "title": "DJI Osmo Pocket 4P review: This upgraded creators' favorite targets semi-pro vi…",
-          "url": "https://is.gd/wdAEi0",
-          "note": "口袋云台相机升级评测",
-          "source": "Mashable"
         },
         {
           "title": "DJI updates Mini 5 Pro, Air 3S, and Mavic 4 Pro with new firmware",
           "url": "https://is.gd/ANEo5b",
-          "note": "三款无人机固件更新要点",
+          "note": "大疆三款无人机固件更新要点",
           "source": "DroneDJ"
+        },
+        {
+          "title": "DJI Osmo Pocket 4P review: This upgraded creators' favorite targets semi-pro vi…",
+          "url": "https://is.gd/wdAEi0",
+          "note": "口袋云台新机评测，面向半专业视频",
+          "source": "Mashable"
+        },
+        {
+          "title": "OPPO reveals Find X10 series – with the world’s first-ever triple 200MP camera…",
+          "url": "https://is.gd/W1w4vS",
+          "note": "三颗两亿像素方案，计算摄影新尝试",
+          "source": "Amateur Photographer"
         },
         {
           "title": "Arduino's $34 USB Camera Simplifies Computer Vision",
           "url": "https://is.gd/xMdBs1",
-          "note": "低价USB相机降低视觉门槛",
+          "note": "低成本USB摄像头降低视觉开发门槛",
           "source": "Hackster.io"
         },
         {
-          "title": "OPPO Find X10 Pro Max debuts industry's first triple 200mp camera system and us…",
-          "url": "https://is.gd/JJ3CZc",
-          "note": "三颗两亿像素影像系统发布",
-          "source": "www.indiagazette.com"
-        },
-        {
-          "title": "GM Tech Day: Autonomous Driving, More Helpful OnStar, Faster Product Developmen…",
-          "url": "https://is.gd/7pzsPJ",
-          "note": "通用科技日披露自驾路线",
-          "source": "Car and Driver"
+          "title": "Amazon Takes on Another Industry: Robotics",
+          "url": "https://is.gd/zcAvCs",
+          "note": "亚马逊机器人布局的产业影响",
+          "source": "Engineering.com"
         }
       ]
     },
@@ -64,52 +64,52 @@
       "title": "TA 的推荐",
       "items": [
         {
-          "title": "Blackmagic Design推 出DaVinci Resolve Studio特惠活动",
+          "title": "票房｜《生化危机：爆发夜》热度持续 国内首部AI电影即将上映",
+          "url": "https://is.gd/jP6AvL",
+          "note": "国内首部AI电影将上映，票房动态",
+          "source": "财新"
+        },
+        {
+          "title": "制作一部AI电影只需几百万元，AI离院线电影还有多远？",
+          "url": "https://is.gd/mLO7Om",
+          "note": "AI电影成本与院线门槛的现实讨论",
+          "source": "搜狐网"
+        },
+        {
+          "title": "Blackmagic Design推出DaVinci Resolve Studio特惠活动",
           "url": "https://is.gd/TVdaLl",
-          "note": "达芬奇调色软件限时优惠",
+          "note": "达芬奇调色软件限时优惠信息",
           "source": "Blackmagic Design"
         },
         {
           "title": "多发性硬化二十年诊疗变迁：复发活动与独立于复发的残疾进展的分离趋势",
           "url": "https://is.gd/hx9SKr",
-          "note": "多发性硬化诊疗趋势综述",
+          "note": "多发性硬化诊疗二十年趋势综述",
           "source": "生物通"
-        },
-        {
-          "title": "Zebra Streaming以 Blackmagic Design产品打造转播车",
-          "url": "https://is.gd/nHa5vs",
-          "note": "转播车后期制作案例",
-          "source": "Blackmagic Design"
-        },
-        {
-          "title": "Netflix出价5亿美元收购Xbox影视改编权 微软开价8亿美元谈崩",
-          "url": "https://is.gd/y6rC5t",
-          "note": "影视改编版权谈判破裂",
-          "source": "3DM"
-        },
-        {
-          "title": "《街霸》新片登顶周末全球票房冠军!口碑扑街仍大卖",
-          "url": "https://is.gd/2BdOkR",
-          "note": "游戏改编电影票房夺冠",
-          "source": "手机网易网"
         },
         {
           "title": "人民日报评“患者送1.9元汽水后举报医务人员收礼”：透着一股荒诞！",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1fZ3BpWC1kU2JCSnNBWGxwVWxDNFpDWTFsRkxiMWpEanJmdndOc2RfdUlUY05fc1pVb0Q5UE9BRE9OS2VCaFc2NXYwa1BwRkR5dUtkZmdWRHJwaDhCR2FwQVZIVXNKbjhSZ3VuT3NqclVmQQ?oc=5",
-          "note": "医患送礼举报事件评论",
+          "note": "官媒评论医患送礼举报事件",
           "source": "京报网"
-        },
-        {
-          "title": "桂东县：社保政策赶大集 服务暖心进乡镇",
-          "url": "https://is.gd/LSVsnL",
-          "note": "基层社保政策宣传落地",
-          "source": "新湖南"
         },
         {
           "title": "“我已经爱上武汉了”——全球时尚掌门人集体表白",
           "url": "https://is.gd/sRHIzE",
-          "note": "时尚品牌高管齐聚武汉",
+          "note": "国际时尚品牌高层齐聚武汉",
           "source": "武汉市商务局"
+        },
+        {
+          "title": "桂东县：社保政策赶大集 服务暖心进乡镇",
+          "url": "https://is.gd/LSVsnL",
+          "note": "基层社保政策宣传下沉案例",
+          "source": "新湖南"
+        },
+        {
+          "title": "从“快进快出”到“深度体验”",
+          "url": "https://is.gd/5NDMD6",
+          "note": "旅游消费转向深度体验的趋势",
+          "source": "https://epaper.nfnews.com/"
         }
       ]
     },
@@ -120,27 +120,27 @@
       "items": [
         {
           "title": "巴西总统选举进行第二轮投票",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPeGo4N08wUzN4N1ZhREhEQXlTU1M1RjRQdjhfbmpjMTBQZDBPTWhmVG43LVpuOGQxV0pKNENsX0Q3VVRJZTlMaXNPakVncE1SWmZVbUQ2YnJCS2VFSE02dFhGTmlyM0hvQzJpQ0xYUm50eHVyWTJTMnkyVGdXT2lIbmlzSG4tUQ?oc=5",
-          "note": "巴西大选进入决胜轮",
-          "source": "新华网"
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9seGs0TmhNZU5zZWFVUUp0UmxGRlIwdDJQM2VvcXNLNjlleUkzSEJLRlNlZjJoV1FEZWk3d1VKb1V0eUswSGprbkRMY3pURy13azJ1SEFyTWV6UHVRNHR5LQ?oc=5",
+          "note": "巴西大选进入决胜轮投票",
+          "source": "东方财富"
+        },
+        {
+          "title": "沙特拦截新一波胡塞导弹和无人机，宣布利雅得机场恢复部分运营",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbXlyemVDd0tFaXVDNkJqWUx0WVF4REN1NnlwV0c4cDlsQ3ZUQ3hFak8tZTVLd0p0YV9FaDlOLUhteGt5U3NSQ0poVWdSRjdCdFdlb1ByNUN5cUlVQ1NraGFyLW4wYWJKVUVjTzBGQTk3R1lVckxCekNTOW9TZXF2UHJEdjhFWE1WNWFVbHlsTzRFVGJCMXVhQW9TVTJmQkZhRUo3ZXhldW54dUVleDY2bEtrYUZ4TDktejZuRG5Nc9IBwgFBVV95cUxOYlEzbnAyUFh1Ujk5LXE5ekVvd20zZS1aYUJNYzQtS3Uxc1dnbzVXZlFQY295d1YtTEtYaWFvd2hlSjRhOU1iMmtmTUNJLVBqRk1QRjdQbktEVk13VTRvTlNhdjRvbVVBdnpNc2M4dFM5WUxPVHF6MEVtQmc5TlBIME5nM2lkNzhPVEZNUDl0Z09wYmhIR3RubldmWEU5ckt1RmlCa0RFeHNuUmoxUHJodzFxQ0EtSnR5d3VQS1BIamFFQQ?oc=5",
+          "note": "沙特拦截胡塞袭击并恢复机场",
+          "source": "美国之音"
         },
         {
           "title": "法国内政部：1314人在新一轮抗议示威中被捕",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9nNGdLTnZiSm5Sd1JVT25HM0hkSmgwZWRiMUk3ZjRDM2NINUx4QndVUFRzdE41djZrOGZZaFlIck9nbFRhdmZ0SmRKSFZPUnZUd0Fzb19lN2dzSEpIYUlvVFpodEFSX0VvWVhKcDdndllQZGpHb21rd3k1Nm15X1k?oc=5",
-          "note": "法国抗议逮捕人数公布",
-          "source": "新华网"
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPY2hDUHRXQWdSWVljS2phLXdWUWdKeEhnU0Y5RV9MQVNGb1doeEhMZk5aamFiRUZwOV9uVWdERE0yTlMwd3JMdzZXQzFhWnkzNmowNFNDYnc4TEh6RF81QnFCcVFhSXJoS0tLQ0p6SUZpR2Y2TzdWcDlTVjhXUEEzd18xaDFhX1FfXzVHaF9ORlBfaXlwa0c3ZG1n?oc=5",
+          "note": "法国抗议示威逾千人被捕",
+          "source": "新华网客户端"
         },
         {
-          "title": "俄总统助理：俄愿在11月4日后恢复俄美乌三方谈判",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9zc29tSTVmaTRqQWFDemp3b0QzbVhYT0FVWUJ2WmVOM21zRjZydnJEMFNubXoxRl9fejBxQmoxb2JOLWJjbTRfODFrYlFlanRTUEdMMUYyNDlOYzdCckt4dXlMNA?oc=5",
-          "note": "俄方释放三方谈判信号",
-          "source": "中国经济网"
-        },
-        {
-          "title": "马斯克：乌军违反条款用“星链”操控攻击型无人机",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8zcEo4ZkJTazdjUlo1T005NjNZeG45ZUxVOHQ0MWRCVEc0WWo2LTlYdkJ5Rlppbjh5U0pVeC1NN0NDTE1MN0ZDdk5fQQ?oc=5",
-          "note": "星链被指用于攻击无人机",
-          "source": "凤凰网"
+          "title": "马斯克称乌违规使用星链发动进攻",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1PcDhRVWJ1RnBZY2d6YTlSQXRDcGZaZkNDdUNTSnJrMDltZHRsOEs2TG9DOHNmeFhIQ1QxTll1UUpiM0NGVW91bnAwdWtnSXotNm16azZSWThPdmhKc2c?oc=5",
+          "note": "星链使用争议涉及战场规则",
+          "source": "京报网"
         }
       ]
     },
@@ -152,37 +152,37 @@
         {
           "title": "张本智和亚锦赛冠军",
           "url": "https://s.weibo.com/weibo?q=%E5%BC%A0%E6%9C%AC%E6%99%BA%E5%92%8C%E4%BA%9A%E9%94%A6%E8%B5%9B%E5%86%A0%E5%86%9B",
-          "note": "亚锦赛男单决赛结果",
+          "note": "亚锦赛男单决赛结果引热议",
           "source": ""
         },
         {
           "title": "陈熠亚锦赛冠军",
           "url": "https://s.weibo.com/weibo?q=%E9%99%88%E7%86%A0%E4%BA%9A%E9%94%A6%E8%B5%9B%E5%86%A0%E5%86%9B",
-          "note": "女单决赛陈熠夺冠",
+          "note": "国乒女单亚锦赛夺冠",
           "source": ""
         },
         {
           "title": "新中国恢复联合国合法席位55年了",
           "url": "https://s.weibo.com/weibo?q=%E6%96%B0%E4%B8%AD%E5%9B%BD%E6%81%A2%E5%A4%8D%E8%81%94%E5%90%88%E5%9B%BD%E5%90%88%E6%B3%95%E5%B8%AD%E4%BD%8D55%E5%B9%B4%E4%BA%86",
-          "note": "恢复联合国席位纪念",
-          "source": ""
-        },
-        {
-          "title": "新剧开播没几天就限免",
-          "url": "https://s.weibo.com/weibo?q=%E6%96%B0%E5%89%A7%E5%BC%80%E6%92%AD%E6%B2%A1%E5%87%A0%E5%A4%A9%E5%B0%B1%E9%99%90%E5%85%8D",
-          "note": "剧集播出策略引讨论",
-          "source": ""
-        },
-        {
-          "title": "老戏骨集体飙戏 男女主像睡着了",
-          "url": "https://s.weibo.com/weibo?q=%E8%80%81%E6%88%8F%E9%AA%A8%E9%9B%86%E4%BD%93%E9%A3%99%E6%88%8F+%E7%94%B7%E5%A5%B3%E4%B8%BB%E5%83%8F%E7%9D%A1%E7%9D%80%E4%BA%86",
-          "note": "剧集演技话题热议",
+          "note": "恢复联合国合法席位纪念话题",
           "source": ""
         },
         {
           "title": "钟文泽给小米贴磨砂膜对比",
           "url": "https://s.weibo.com/weibo?q=%E9%92%9F%E6%96%87%E6%B3%BD%E7%BB%99%E5%B0%8F%E7%B1%B3%E8%B4%B4%E7%A3%A8%E7%A0%82%E8%86%9C%E5%AF%B9%E6%AF%94",
-          "note": "手机贴膜效果对比",
+          "note": "数码博主贴膜对比引关注",
+          "source": ""
+        },
+        {
+          "title": "新剧开播没几天就限免",
+          "url": "https://s.weibo.com/weibo?q=%E6%96%B0%E5%89%A7%E5%BC%80%E6%92%AD%E6%B2%A1%E5%87%A0%E5%A4%A9%E5%B0%B1%E9%99%90%E5%85%8D",
+          "note": "剧集限免策略引发讨论",
+          "source": ""
+        },
+        {
+          "title": "老戏骨集体飙戏 男女主像睡着了",
+          "url": "https://s.weibo.com/weibo?q=%E8%80%81%E6%88%8F%E9%AA%A8%E9%9B%86%E4%BD%93%E9%A3%99%E6%88%8F+%E7%94%B7%E5%A5%B3%E4%B8%BB%E5%83%8F%E7%9D%A1%E7%9D%80%E4%BA%86",
+          "note": "剧集演技话题登上热搜",
           "source": ""
         }
       ]
@@ -195,37 +195,37 @@
         {
           "title": "#HojeEuVotoLula",
           "url": "https://getdaytrends.com/trend/%23HojeEuVotoLula/",
-          "note": "巴西大选投票日热词",
+          "note": "巴西大选投票日相关标签",
           "source": ""
         },
         {
           "title": "carrick",
           "url": "https://getdaytrends.com/trend/carrick/",
-          "note": "足球相关话题登榜",
+          "note": "足球相关话题登上趋势榜",
           "source": ""
         },
         {
           "title": "Bournemouth",
           "url": "https://getdaytrends.com/trend/Bournemouth/",
-          "note": "英超比赛话题升温",
-          "source": ""
-        },
-        {
-          "title": "#MUNBOU",
-          "url": "https://getdaytrends.com/trend/%23MUNBOU/",
-          "note": "曼联对伯恩茅斯赛事标签",
+          "note": "英超球队相关讨论升温",
           "source": ""
         },
         {
           "title": "#Vivant",
           "url": "https://getdaytrends.com/trend/%23Vivant/",
-          "note": "日剧相关话题上榜",
+          "note": "日剧话题标签持续发酵",
+          "source": ""
+        },
+        {
+          "title": "#MUNBOU",
+          "url": "https://getdaytrends.com/trend/%23MUNBOU/",
+          "note": "曼联比赛相关标签上榜",
           "source": ""
         },
         {
           "title": "#FoolInLoveEP6",
           "url": "https://getdaytrends.com/trend/%23FoolInLoveEP6/",
-          "note": "剧集新一集引发讨论",
+          "note": "综艺新集数引发讨论",
           "source": ""
         }
       ]
@@ -238,25 +238,25 @@
         {
           "title": "debpalash/VoiceStudio — VoiceStudio is the open-source, fully-local…（1,588 star…",
           "url": "https://github.com/debpalash/VoiceStudio",
-          "note": "全本地开源语音工具",
+          "note": "全本地开源语音工具热度领先",
           "source": ""
         },
         {
           "title": "Nutlope/hallmark — Anti-AI-slop design skill for Claude Code,…（1,359 stars toda…",
           "url": "https://github.com/Nutlope/hallmark",
-          "note": "面向AI编码的设计技能",
+          "note": "面向Claude Code的设计技能库",
           "source": ""
         },
         {
           "title": "pbakaus/impeccable — The design language that makes your AI harn…（1,113 stars t…",
           "url": "https://github.com/pbakaus/impeccable",
-          "note": "提升AI输出质量的设计语言",
+          "note": "提升AI产出质量的设计语言",
           "source": ""
         },
         {
           "title": "makecindy/cindy — Consider it done. The open-source AI agent…（677 stars today）",
           "url": "https://github.com/makecindy/cindy",
-          "note": "开源AI代理项目受关注",
+          "note": "开源AI代理项目获关注",
           "source": ""
         },
         {
@@ -275,19 +275,19 @@
         {
           "title": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Th…",
           "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
-          "note": "AI眼镜拓展艺术导览",
+          "note": "AI眼镜用于博物馆无障碍观展",
           "source": ""
         },
         {
           "title": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Produc…",
           "url": "https://about.fb.com/news/2026/10/more-than-three-quarters-of-small-business-owners-say-ai-makes-them-more-productive-but-most-need-more-guidance/",
-          "note": "小企业主AI使用调查",
+          "note": "调查称AI提升小企业生产力",
           "source": ""
         },
         {
           "title": "Now You Can Invite Anyone to a WhatsApp Call",
           "url": "https://about.fb.com/news/2026/10/introducing-whatsapp-guest-calling/",
-          "note": "WhatsApp支持邀请访客通话",
+          "note": "WhatsApp支持邀请非联系人通话",
           "source": ""
         }
       ]
@@ -300,31 +300,31 @@
         {
           "title": "烟草第一大省云南前三季度烟草工业负增长，中国烟草市场正在发生什么变化？为何烤烟卖不动了？",
           "url": "https://www.zhihu.com/question/2096531309044692741",
-          "note": "云南烟草工业负增长解析",
+          "note": "云南烟草工业负增长引行业讨论",
           "source": ""
         },
         {
           "title": "热播日剧把中国人拍成施暴者，设计中方人员对日本情报人员切指、刺穿腹部情节，为何娱乐化包装的敌意更危险？",
           "url": "https://www.zhihu.com/question/2097635960213037771",
-          "note": "日剧涉华情节引争议",
+          "note": "日剧涉华情节引发舆论争议",
           "source": ""
         },
         {
           "title": "上海 90 岁老人在公共楼道住近一年，三名女儿因赡养问题互相推诿，该怎样破局？如何从法律角度解读？",
           "url": "https://www.zhihu.com/question/2096903756369458155",
-          "note": "赡养纠纷法律角度解读",
+          "note": "赡养纠纷折射养老法律难题",
           "source": ""
         },
         {
           "title": "乒乓球亚锦赛男单决赛，李天阳 2-3 不敌张本智和，获男单亚军，如何评价这场比赛？",
           "url": "https://www.zhihu.com/question/2097748003247191571",
-          "note": "亚锦赛男单决赛复盘",
+          "note": "亚锦赛男单决赛惜败引热议",
           "source": ""
         },
         {
           "title": "已无法说话的李雪健仅靠表情在《长征颂歌》晚会中完成的演出为何能这么动人？",
           "url": "https://www.zhihu.com/question/2097027434851693536",
-          "note": "李雪健表情表演引热议",
+          "note": "李雪健无声表演获观众认可",
           "source": ""
         }
       ]
