@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+dryrun-output.txt
+dryrun-errors.txt
+desktop/build/
+desktop/test-*appdata/

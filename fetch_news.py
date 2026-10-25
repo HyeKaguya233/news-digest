@@ -13,8 +13,10 @@
   WECHAT_RSS_URL  你自己的微信 RSS 源（WeRSS / RSSHub 等）
   QMSG_MAX_LEN    QQ 单条消息长度上限，默认 1700 字（Qmsg 硬限制 1800）
   DEEPSEEK_API_KEY 配置后启用模型评审（或 LLM_API_KEY + LLM_BASE_URL + LLM_MODEL）
-  USER_PROFILE    用户职业与兴趣画像，用于「为你推荐」排序
-  INTEREST_QUERIES 个性化搜索词，逗号或竖线分隔
+  USER_PROFILE    第一位读者的职业与兴趣画像，用于「你的推荐」排序
+  INTEREST_QUERIES 第一位读者的个性化搜索词，逗号或竖线分隔
+  PARTNER_PROFILE 第二位读者的兴趣画像，用于「TA 的推荐」排序
+  PARTNER_INTEREST_QUERIES 第二位读者的个性化搜索词，逗号或竖线分隔
   SEARCH_QUERY    手动搜索关键词；配置后只推送该关键词的搜索结果
   DRY_RUN=1       只在终端打印，不推送
 """
@@ -106,16 +108,54 @@ DEFAULT_INTEREST_QUERIES = (
     "DJI",
 )
 
+DEFAULT_PARTNER_PROFILE = (
+    "第二位读者，关注影视工业、电影与电视剧资讯、视频剪辑与后期制作、"
+    "多发性硬化等神经系统疾病、医疗行业与医疗纠纷、时尚品牌与消费趋势、"
+    "中国医保社保政策，以及旅游目的地和出行实用信息。"
+    "偏好可靠来源、明确进展、政策变化和可执行信息，不需要营销软文或泛泛的生活方式内容。"
+)
+
+DEFAULT_PARTNER_INTEREST_QUERIES = (
+    "电影 电视剧 影视资讯",
+    "视频剪辑 后期制作 DaVinci Resolve",
+    "多发性硬化 研究 治疗",
+    "医疗纠纷 医院",
+    "时尚 品牌 趋势",
+    "医保 社保 政策",
+    "旅游 签证 目的地",
+    "电影 票房 新片",
+)
+
 
 def personal_profile() -> str:
     return os.environ.get("USER_PROFILE", "").strip() or DEFAULT_PROFILE
 
 
-def interest_queries():
-    raw = os.environ.get("INTEREST_QUERIES", "").strip()
+def partner_profile() -> str:
+    return os.environ.get("PARTNER_PROFILE", "").strip() or DEFAULT_PARTNER_PROFILE
+
+
+def queries_from_env(name: str, default):
+    raw = os.environ.get(name, "").strip()
     parts = re.split(r"[|,，]+", raw) if raw else []
     queries = [clean(part, 60) for part in parts if part.strip()]
-    return tuple(queries[:8]) or DEFAULT_INTEREST_QUERIES
+    return tuple(queries[:8]) or default
+
+
+def interest_queries():
+    return queries_from_env("INTEREST_QUERIES", DEFAULT_INTEREST_QUERIES)
+
+
+def partner_interest_queries():
+    return queries_from_env("PARTNER_INTEREST_QUERIES", DEFAULT_PARTNER_INTEREST_QUERIES)
+
+
+def recommend_title() -> str:
+    return os.environ.get("RECOMMEND_TITLE", "").strip() or "你的推荐"
+
+
+def partner_recommend_title() -> str:
+    return os.environ.get("PARTNER_RECOMMEND_TITLE", "").strip() or "TA 的推荐"
 
 
 def clean(text: str, limit: int = 80) -> str:
@@ -126,8 +166,12 @@ def clean(text: str, limit: int = 80) -> str:
     return text
 
 
-def mk(title: str, url: str = "") -> dict:
-    return {"title": clean(title), "url": (url or "").strip()}
+def mk(title: str, url: str = "", source: str = "") -> dict:
+    return {
+        "title": clean(title),
+        "url": (url or "").strip(),
+        "source": clean(source, 48),
+    }
 
 
 def dedupe_items(items):
@@ -218,7 +262,8 @@ def fetch_world_news(limit: int = 6):
     for entry in feed.entries[: limit * 3]:
         title = clean(entry.get("title", ""))
         title = re.sub(r"\s-\s[^-]{1,24}$", "", title).strip()
-        items.append(mk(title, entry.get("link", "")))
+        source = entry.get("source") or {}
+        items.append(mk(title, entry.get("link", ""), source.get("title") or ""))
         if len(dedupe_items(items)) >= limit:
             break
     items = dedupe_items(items)[:limit]
@@ -437,7 +482,12 @@ def fetch_google_news_search(query: str, limit: int = 4):
     for entry in feed.entries[: limit * 3]:
         title = clean(entry.get("title", ""))
         title = re.sub(r"\s-\s[^-]{1,32}$", "", title).strip()
-        items.append(mk(title, entry.get("link", "")))
+        source = entry.get("source") or {}
+        source_name = source.get("title") or ""
+        source_url = source.get("href") or ""
+        if is_low_quality(title, source_url):
+            continue
+        items.append(mk(title, entry.get("link", ""), source_name))
         if len(dedupe_items(items)) >= limit:
             break
     items = dedupe_items(items)[:limit]
@@ -507,18 +557,33 @@ def fetch_github_search(query: str, limit: int = 5):
     return items
 
 
-def fetch_personal_recommendations(limit: int = 10):
-    items = []
+def fetch_recommendations(queries, limit: int, label: str):
+    groups = []
     errors = []
-    for query in interest_queries():
+    for query in queries:
         try:
-            items.extend(fetch_google_news_search(query, 4))
+            groups.append(fetch_google_news_search(query, 4))
         except Exception as exc:  # noqa: BLE001
+            log(f"[{label}] 搜索「{query}」失败：{exc}")
             errors.append(f"{query}: {exc}")
+            groups.append([])
+    items = []
+    for index in range(4):
+        for group in groups:
+            if index < len(group):
+                items.append(group[index])
     items = dedupe_items(items)[:limit]
     if not items:
-        raise RuntimeError("个性化推荐全部源失败（" + "；".join(errors) + "）")
+        raise RuntimeError(f"{label}全部源失败（" + "；".join(errors) + "）")
     return items
+
+
+def fetch_personal_recommendations(limit: int = 10):
+    return fetch_recommendations(interest_queries(), limit, "你的推荐")
+
+
+def fetch_partner_recommendations(limit: int = 12):
+    return fetch_recommendations(partner_interest_queries(), limit, "TA 的推荐")
 
 
 def fetch_topic_search(query: str, limit: int = 20):
@@ -545,12 +610,28 @@ def fetch_topic_search(query: str, limit: int = 20):
 
 
 LOW_QUALITY_WORDS = ("抽奖", "领红包", "优惠券", "限时秒杀", "点击领取", "广告位", "返利")
+LOW_QUALITY_DOMAINS = ("henan100.com", "2265.com", "downcc.com", "pc6.com")
+DOWNLOAD_SPAM_WORDS = (
+    "最新版",
+    "安卓版",
+    "iphone版",
+    "下载",
+    "破解版",
+    "免费观看",
+    "在线观看",
+    "安装包",
+)
 
 
-def is_low_quality(title: str) -> bool:
+def is_low_quality(title: str, source_url: str = "") -> bool:
     if len(title) < 5:
         return True
     if any(word in title for word in LOW_QUALITY_WORDS):
+        return True
+    if any(domain in (source_url or "").lower() for domain in LOW_QUALITY_DOMAINS):
+        return True
+    lowered = title.lower()
+    if sum(word in lowered for word in DOWNLOAD_SPAM_WORDS) >= 2:
         return True
     if title.count("#") >= 6:
         return True
@@ -629,6 +710,7 @@ def shorten_sections(sections, limit: int = 90, max_requests: int = 20):
 
 LLM_LIMITS = {
     "recommend": 6,
+    "recommend_partner": 8,
     "search": 10,
     "world": 4,
     "weibo": 6,
@@ -640,7 +722,7 @@ LLM_LIMITS = {
 }
 
 LLM_SYSTEM = (
-    "你是资深中文新闻编辑，负责给一个人的每日简报做筛选和排序。"
+    "你是资深中文新闻编辑，负责给两位读者做每日简报的筛选、分组和排序。"
     "你只输出 JSON，不输出任何解释文字。"
 )
 
@@ -654,7 +736,7 @@ def extract_json(text: str):
 
 
 def llm_review(sections):
-    """调用模型做去重、去标题党、排序和一句话摘要。失败时返回 None。"""
+    """调用模型做去重、去标题党、双画像排序和日报总览。失败时返回 None。"""
     key = (
         os.environ.get("DEEPSEEK_API_KEY", "").strip()
         or os.environ.get("LLM_API_KEY", "").strip()
@@ -666,14 +748,21 @@ def llm_review(sections):
 
     payload = {
         "limits": LLM_LIMITS,
-        "profile": personal_profile(),
+        "profiles": {
+            "primary": personal_profile(),
+            "partner": partner_profile(),
+        },
         "search_query": os.environ.get("SEARCH_QUERY", "").strip(),
         "sections": [
             {
                 "key": section["key"],
                 "title": section["title"],
                 "items": [
-                    {"title": item["title"], "url": item["url"]}
+                    {
+                        "title": item["title"],
+                        "url": item["url"],
+                        "source": item.get("source") or "",
+                    }
                     for item in section["items"]
                 ],
             }
@@ -689,11 +778,14 @@ def llm_review(sections):
         "2. 删除标题党、广告、软文、无信息量的内容\n"
         "3. 每个板块按重要性从高到低排序，不超过 limits 条\n"
         "4. 每条给一句 20 字以内的中文说明 note，不要复述标题\n"
-        "5. 挑 3 条今天最值得知道的，写成 30 字以内的 highlights\n"
-        "6. recommend 板块必须贴合 profile，优先技术含量高、与当前工作相关的内容\n"
-        "7. search_query 非空时，search 板块是用户主动搜索，优先直接相关且信息量高的结果\n\n"
-        "约束：url 必须原样复制输入中的链接，不得编造或修改；保留原文语言；只输出 JSON。\n\n"
-        '输出格式：{"highlights":["..."],"sections":[{"key":"world","items":[{"title":"...","url":"...","note":"..."}]}]}'
+        "5. 写一段 120-220 字的中文 briefing，总览今天最值得知道的 3-5 件事，同时照顾两位读者；不要编造输入中没有的事实\n"
+        "6. 挑 3-5 条今天最值得知道的，写成 30 字以内的 highlights\n"
+        "7. recommend 必须贴合 profiles.primary，优先技术含量高、与当前工作相关的内容\n"
+        "8. recommend_partner 必须贴合 profiles.partner；覆盖影视/后期、医疗、时尚、医保社保、旅游中的多个主题，不要把第一条读者的技术内容混进去\n"
+        "9. recommend_partner 的医疗内容只保留来源可靠、有明确研究或政策进展的内容，不把新闻写成诊断或治疗建议；医闹类只保留事实清楚、来源可核验且措辞克制的报道\n"
+        "10. search_query 非空时，search 板块是用户主动搜索，优先直接相关且信息量高的结果\n\n"
+        "约束：url 必须原样复制输入中的链接，不得编造或修改；保留原文语言；参考 source 判断来源可靠性；只输出 JSON。\n\n"
+        '输出格式：{"briefing":"...","highlights":["..."],"sections":[{"key":"world","items":[{"title":"...","url":"...","note":"..."}]}]}'
     )
 
     try:
@@ -738,6 +830,7 @@ def llm_review(sections):
                     "title": clean(row.get("title") or original["title"]),
                     "url": url,
                     "note": clean(row.get("note") or "", 24),
+                    "source": original.get("source") or "",
                 }
             )
         reviewed.append({**target, "items": items})
@@ -753,9 +846,10 @@ def llm_review(sections):
     if dropped:
         log(f"[模型评审] 丢弃 {dropped} 条链接不匹配的条目")
 
-    highlights = [clean(text, 40) for text in (data.get("highlights") or [])[:3]]
+    highlights = [clean(text, 40) for text in (data.get("highlights") or [])[:5]]
+    briefing = clean(data.get("briefing") or "", 260)
     log(f"[模型评审] 完成，保留 {total} 条")
-    return reviewed, highlights
+    return reviewed, highlights, briefing
 
 
 def gather_sections():
@@ -779,7 +873,13 @@ def gather_sections():
         return apply_quality_rules(sections), errors
 
     jobs = [
-        ("recommend", "🎯", "为你推荐", fetch_personal_recommendations),
+        ("recommend", "🎯", recommend_title(), fetch_personal_recommendations),
+        (
+            "recommend_partner",
+            "✨",
+            partner_recommend_title(),
+            fetch_partner_recommendations,
+        ),
         ("world", "🌍", "海外要闻", fetch_world_news),
         ("weibo", "🔥", "微博热搜", fetch_weibo_hot),
         ("x", "🐦", "X 全球趋势", fetch_x_trends),
@@ -841,9 +941,16 @@ def fit(lines, limit: int) -> str:
 
 
 def render_plain(
-    sections, stamp: str, limit: int, highlights=None, heading: str = "每日简报"
+    sections,
+    stamp: str,
+    limit: int,
+    highlights=None,
+    heading: str = "每日简报",
+    briefing: str = "",
 ) -> str:
     lines = [f"📰 {heading} · {stamp}", ""]
+    if briefing:
+        lines.extend(["🧭 AI 日报总览", briefing, ""])
     if highlights:
         lines.append("⭐ 今日要点")
         for text in highlights:
@@ -865,9 +972,15 @@ def render_plain(
 
 
 def render_markdown(
-    sections, stamp: str, highlights=None, heading: str = "每日简报"
+    sections,
+    stamp: str,
+    highlights=None,
+    heading: str = "每日简报",
+    briefing: str = "",
 ) -> str:
     lines = [f"## 📰 {heading} · {stamp}", ""]
+    if briefing:
+        lines.extend(["### 🧭 AI 日报总览", briefing, ""])
     if highlights:
         lines.append("### ⭐ 今日要点")
         for text in highlights:
@@ -888,13 +1001,16 @@ def render_markdown(
     return "\n".join(lines).strip()
 
 
-def write_feed(path: str, sections, now, title: str, highlights, errors):
+def write_feed(
+    path: str, sections, now, title: str, highlights, errors, briefing: str = ""
+):
     """写出给桌面客户端使用的结构化日报。"""
     items = [
         {
             "title": item["title"],
             "url": item["url"],
             "note": item.get("note") or "",
+            "source": item.get("source") or "",
         }
         for section in sections
         for item in section["items"]
@@ -906,6 +1022,7 @@ def write_feed(path: str, sections, now, title: str, highlights, errors):
         "generated_at": now.isoformat(timespec="seconds"),
         "title": title,
         "heading": "每日简报",
+        "briefing": briefing,
         "highlights": list(highlights or []),
         "count": len(items),
         "sections": [
@@ -918,6 +1035,7 @@ def write_feed(path: str, sections, now, title: str, highlights, errors):
                         "title": item["title"],
                         "url": item["url"],
                         "note": item.get("note") or "",
+                        "source": item.get("source") or "",
                     }
                     for item in section["items"]
                 ],
@@ -1121,16 +1239,17 @@ def main() -> int:
     sections, errors = gather_sections()
     sections = shorten_sections(sections)
     highlights = []
+    briefing = ""
     reviewed = llm_review(sections)
     if reviewed:
-        sections, highlights = reviewed
+        sections, highlights, briefing = reviewed
     total = sum(len(section["items"]) for section in sections)
     max_len = int(os.environ.get("QMSG_MAX_LEN", "1700"))
 
     feed_out = os.environ.get("FEED_OUT", "").strip()
     if feed_out and not search_query and total >= 3:
         try:
-            write_feed(feed_out, sections, now, title, highlights, errors)
+            write_feed(feed_out, sections, now, title, highlights, errors, briefing)
         except Exception as exc:  # noqa: BLE001
             log(f"[Feed] 写入失败：{exc}")
 
@@ -1144,8 +1263,12 @@ def main() -> int:
             )
         markdown = plain
     else:
-        plain = render_plain(sections, stamp, 10 ** 6, highlights, heading=heading)
-        markdown = render_markdown(sections, stamp, highlights, heading=heading)
+        plain = render_plain(
+            sections, stamp, 10 ** 6, highlights, heading=heading, briefing=briefing
+        )
+        markdown = render_markdown(
+            sections, stamp, highlights, heading=heading, briefing=briefing
+        )
         if errors:
             plain += f"\n\n（本次跳过：{'、'.join(errors)}）"
             markdown += f"\n\n> 本次跳过：{'、'.join(errors)}"

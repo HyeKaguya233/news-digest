@@ -1,0 +1,5 @@
+pystray>=0.19.5
+Pillow>=10.0
+windows-toasts>=1.3.0
+winotify>=0.6.0
+pyinstaller>=6.0
