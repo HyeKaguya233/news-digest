@@ -7,6 +7,7 @@
 
 | 板块 | 数据源 | 说明 |
 | --- | --- | --- |
+| 🎯 为你推荐 | 按兴趣画像搜索 Google News | 模型再按职业相关性精选 6 条 |
 | 🌍 海外要闻 | Google News RSS（WORLD，中文） | 国际头条 6 条 |
 | 🔥 微博热搜 | weibo 接口 → 今日热榜(tophub) → vvhan | Top 10 |
 | 🐦 X 全球趋势 | trends24.in（美国榜）→ getdaytrends | Top 10 |
@@ -70,6 +71,7 @@
 
 配置 `DEEPSEEK_API_KEY` 后会多一层模型评审：
 
+- 「为你推荐」按你的职业与兴趣画像筛掉泛泛内容
 - 合并同一事件的多条报道
 - 剔除标题党、软文、无信息量的内容
 - 按重要性重排，并给出 3 条「今日要点」
@@ -77,6 +79,26 @@
 
 模型输出的链接必须与输入完全一致，否则该条会被丢弃；调用失败或结果过少会自动回退到规则版，不会导致漏推。
 默认模型 `deepseek-chat`，也可以用 Variables 里的 `LLM_MODEL` 换成别的（如 `deepseek-reasoner`）。
+
+## 个性化推荐与搜索
+
+默认画像：有自动驾驶从业背景的手持影像设备软件工程师；关注自动驾驶、机器人、
+计算机视觉、计算摄影、相机与影像算法、嵌入式与边缘计算、C++/Python 和 AI 工程化。
+
+可在 **Settings → Secrets and variables → Actions → Variables** 里覆盖：
+
+| 名称 | 示例 |
+| --- | --- |
+| `USER_PROFILE` | 你的职业、项目和长期关注方向 |
+| `INTEREST_QUERIES` | `autonomous driving, computer vision, computational photography, DJI` |
+
+默认搜索词为 `autonomous driving`、`computer vision`、`computational photography`、
+`camera imaging software`、`robotics engineering`、`DJI`；每次取近 7 天内容，再由模型精选。
+
+### 手动搜索
+
+打开 **Actions → daily-news-digest → Run workflow**，在 `query` 里输入关键词再运行。
+填写后不会抓常规热榜，只搜索该关键词并把结果推送到 Bark。留空则照常生成每日简报。
 
 ### 5. 先手动跑一次
 
@@ -108,5 +130,6 @@
 ```bash
 pip install -r requirements.txt
 DRY_RUN=1 python fetch_news.py        # 只打印，不推送
+SEARCH_QUERY="computational photography" DRY_RUN=1 python fetch_news.py
 QMSG_KEY=你的key python fetch_news.py  # 真推一条测试
 ```
