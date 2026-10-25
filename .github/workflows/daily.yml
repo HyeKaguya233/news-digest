@@ -32,7 +32,7 @@ jobs:
         env:
           TZ: Asia/Shanghai
           BARK_KEY: ${{ secrets.BARK_KEY }}
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY || secrets.DS }}
           QMSG_KEY: ${{ secrets.QMSG_KEY }}
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
