@@ -1,0 +1,40 @@
+name: daily-news-digest
+
+on:
+  schedule:
+    # UTC 00:00 = 北京时间 08:00。想换时间就改小时（北京时间 = UTC + 8）。
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-news-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build and push digest
+        env:
+          TZ: Asia/Shanghai
+          BARK_KEY: ${{ secrets.BARK_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          QMSG_KEY: ${{ secrets.QMSG_KEY }}
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
+          WECHAT_RSS_URL: ${{ vars.WECHAT_RSS_URL }}
+        run: python fetch_news.py
