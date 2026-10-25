@@ -743,8 +743,10 @@ def llm_review(sections):
     )
     if not key:
         return None
-    base = os.environ.get("LLM_BASE_URL", "https://api.deepseek.com").rstrip("/")
-    model = os.environ.get("LLM_MODEL", "deepseek-chat")
+    base = (
+        os.environ.get("LLM_BASE_URL", "").strip() or "https://api.deepseek.com"
+    ).rstrip("/")
+    model = os.environ.get("LLM_MODEL", "").strip() or "deepseek-chat"
 
     payload = {
         "limits": LLM_LIMITS,
