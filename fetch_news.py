@@ -849,7 +849,7 @@ def llm_review(sections):
         log(f"[模型评审] 丢弃 {dropped} 条链接不匹配的条目")
 
     highlights = [clean(text, 40) for text in (data.get("highlights") or [])[:5]]
-    briefing = clean(data.get("briefing") or "", 260)
+    briefing = clean(data.get("briefing") or "", 400)
     log(f"[模型评审] 完成，保留 {total} 条")
     return reviewed, highlights, briefing
 
