@@ -10,6 +10,8 @@
   `latest.json`。
 - `skills/daily-news-digest/SKILL.md`：把 `latest.json` 整理成中文双人日报。
 - `desktop/`：Windows 托盘客户端源码、构建脚本和已构建 EXE。
+- `.github/workflows/import-project.yml`：手动构建 Windows 客户端；文件名是历史遗留，
+  工作流显示名为 `build-windows-client`。
 - `README.md`：部署、配置、运行、构建和排障的权威说明。
 
 ## 不可破坏的约定
