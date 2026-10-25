@@ -1,0 +1,241 @@
+{
+  "schema": 1,
+  "kind": "daily",
+  "date": "2026-10-25",
+  "generated_at": "2026-10-25T22:35:34+08:00",
+  "title": "每日简报 10-25",
+  "heading": "每日简报",
+  "highlights": [
+    "通用汽车公布脱手自动驾驶路线图，皮卡与SUV先行",
+    "OPPO Find X10 首发三颗2亿像素摄像头系统",
+    "微软宣布Windows全面转向原生开发，告别网页套壳"
+  ],
+  "count": 35,
+  "sections": [
+    {
+      "key": "recommend",
+      "icon": "🎯",
+      "title": "为你推荐",
+      "items": [
+        {
+          "title": "GM targets ‘eyes-off’ autonomous driving for pickups, SUVs",
+          "url": "https://is.gd/jTFPCe",
+          "note": "通用明确脱手自动驾驶落地车型与时间"
+        },
+        {
+          "title": "GM Tech Day: Autonomous Driving, More Helpful OnStar, Faster Product Developmen…",
+          "url": "https://is.gd/7pzsPJ",
+          "note": "通用科技日披露自驾与研发提效细节"
+        },
+        {
+          "title": "NVIDIA (NVDA) Leverages AI Growth to Expand Its Autonomous Driving Opportunity…",
+          "url": "https://is.gd/U2Dp06",
+          "note": "英伟达借AI算力扩张自驾业务版图"
+        },
+        {
+          "title": "Nio CEO Sets Payment and Safety Tests for Autonomous Driving’s New Phase",
+          "url": "https://is.gd/DpYbFr",
+          "note": "蔚来CEO谈自驾新阶段的付费与安全验证"
+        },
+        {
+          "title": "Arduino's $34 USB Camera Simplifies Computer Vision",
+          "url": "https://is.gd/xMdBs1",
+          "note": "低价USB摄像头降低视觉开发门槛"
+        },
+        {
+          "title": "Building trustworthy computer vision with probabilistic models",
+          "url": "https://is.gd/z2TD9I",
+          "note": "概率模型提升视觉系统可信度的方法"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "icon": "🌍",
+      "title": "海外要闻",
+      "items": [
+        {
+          "title": "马斯克：乌军违反条款用“星链”操控攻击型无人机",
+          "url": "https://is.gd/PvA4cl",
+          "note": "星链被用于无人机作战引发合规争议"
+        },
+        {
+          "title": "俄总统助理：俄愿在11月4日后恢复俄美乌三方谈判",
+          "url": "https://is.gd/XaRFRX",
+          "note": "俄方释放恢复三方谈判信号"
+        },
+        {
+          "title": "巴西总统选举第二轮投票开始",
+          "url": "https://is.gd/q1Gni8",
+          "note": "巴西大选进入决胜轮投票"
+        },
+        {
+          "title": "法国内政部：1314人在新一轮抗议示威中被捕",
+          "url": "https://is.gd/fVHwNJ",
+          "note": "法国抗议升级，逾千人被捕"
+        }
+      ]
+    },
+    {
+      "key": "weibo",
+      "icon": "🔥",
+      "title": "微博热搜",
+      "items": [
+        {
+          "title": "南京3000万豪宅出入口在隧道里",
+          "url": "https://s.weibo.com/weibo?q=%E5%8D%97%E4%BA%AC3000%E4%B8%87%E8%B1%AA%E5%AE%85%E5%87%BA%E5%85%A5%E5%8F%A3%E5%9C%A8%E9%9A%A7%E9%81%93%E9%87%8C",
+          "note": "高价楼盘设计缺陷引热议"
+        },
+        {
+          "title": "县委书记说被扔下水是张雪临时起意",
+          "url": "https://is.gd/7EcaU7",
+          "note": "县委书记回应被扔下水事件经过"
+        },
+        {
+          "title": "县委书记拒绝张雪为家乡打广告",
+          "url": "https://s.weibo.com/weibo?q=%E5%8E%BF%E5%A7%94%E4%B9%A6%E8%AE%B0%E6%8B%92%E7%BB%9D%E5%BC%A0%E9%9B%AA%E4%B8%BA%E5%AE%B6%E4%B9%A1%E6%89%93%E5%B9%BF%E5%91%8A",
+          "note": "地方主官婉拒网红代言引讨论"
+        },
+        {
+          "title": "金牌闪耀赛场人生不惧残缺",
+          "url": "https://is.gd/nH7o4gc",
+          "note": "残障运动员夺金话题受关注"
+        },
+        {
+          "title": "老戏骨集体飙戏 男女主像睡着了",
+          "url": "https://is.gd/EkfVLy",
+          "note": "剧集演技对比成讨论焦点"
+        },
+        {
+          "title": "TES与AL多人缺席S16",
+          "url": "https://s.weibo.com/weibo?q=TES%E4%B8%8EAL%E5%A4%9A%E4%BA%BA%E7%BC%BA%E5%B8%ADS16",
+          "note": "电竞战队人员缺阵引发猜测"
+        }
+      ]
+    },
+    {
+      "key": "x",
+      "icon": "🐦",
+      "title": "X 全球趋势",
+      "items": [
+        {
+          "title": "#HojeEuVotoLula",
+          "url": "https://getdaytrends.com/trend/%23HojeEuVotoLula/",
+          "note": "巴西大选投票日政治标签登榜"
+        },
+        {
+          "title": "日本シリーズ",
+          "url": "https://getdaytrends.com/trend/%E6%97%A5%E6%9C%AC%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA/",
+          "note": "日本大赛棒球系列赛热度高"
+        },
+        {
+          "title": "ホームラン",
+          "url": "https://getdaytrends.com/trend/%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%A9%E3%83%B3/",
+          "note": "本垒打话题随赛事升温"
+        },
+        {
+          "title": "#Vivant",
+          "url": "https://getdaytrends.com/trend/%23Vivant/",
+          "note": "日剧Vivant相关讨论登榜"
+        },
+        {
+          "title": "Yostar",
+          "url": "https://getdaytrends.com/trend/Yostar/",
+          "note": "游戏厂商Yostar成讨论热点"
+        },
+        {
+          "title": "#GOスト",
+          "url": "https://getdaytrends.com/trend/%23GO%E3%82%B9%E3%83%88/",
+          "note": "日本娱乐话题标签上榜"
+        }
+      ]
+    },
+    {
+      "key": "github",
+      "icon": "💻",
+      "title": "GitHub Trending",
+      "items": [
+        {
+          "title": "debpalash/VoiceStudio — VoiceStudio is the open-source, fully-local…（1,588 star…",
+          "url": "https://github.com/debpalash/VoiceStudio",
+          "note": "全本地开源语音工作台，热度最高"
+        },
+        {
+          "title": "Nutlope/hallmark — Anti-AI-slop design skill for Claude Code,…（1,359 stars toda…",
+          "url": "https://github.com/Nutlope/hallmark",
+          "note": "面向Claude Code的反AI味设计技能"
+        },
+        {
+          "title": "pbakaus/impeccable — The design language that makes your AI harn…（1,113 stars t…",
+          "url": "https://github.com/pbakaus/impeccable",
+          "note": "提升AI产出质量的设计语言规范"
+        },
+        {
+          "title": "pollen-robotics/microduck — A Tiny biped duck robot 🦆（657 stars today）",
+          "url": "https://github.com/pollen-robotics/microduck",
+          "note": "开源双足小机器人，适合入门研究"
+        },
+        {
+          "title": "makecindy/cindy — Consider it done. The open-source AI agent…（677 stars today）",
+          "url": "https://github.com/makecindy/cindy",
+          "note": "开源AI智能体框架，当日新晋热门"
+        }
+      ]
+    },
+    {
+      "key": "meta",
+      "icon": "📣",
+      "title": "Facebook / Meta 动态",
+      "items": [
+        {
+          "title": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Th…",
+          "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
+          "note": "AI眼镜用于博物馆无障碍导览"
+        },
+        {
+          "title": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Produc…",
+          "url": "https://about.fb.com/news/2026/10/more-than-three-quarters-of-small-business-owners-say-ai-makes-them-more-productive-but-most-need-more-guidance/",
+          "note": "调查称AI提升小企业生产力但缺指导"
+        },
+        {
+          "title": "New Tools for the Admins Who Build Communities on Forum",
+          "url": "https://about.fb.com/news/2026/10/new-tools-for-the-admins-who-build-communities-on-forum/",
+          "note": "Forum社区管理员工具更新"
+        }
+      ]
+    },
+    {
+      "key": "cn",
+      "icon": "🇨🇳",
+      "title": "中文热榜",
+      "items": [
+        {
+          "title": "微软宣布全面转向原生开发并告别网页套壳，能解决 Windows11 的卡顿臃肿吗？",
+          "url": "https://www.zhihu.com/question/2096941984967563088",
+          "note": "Windows回归原生开发的技术讨论"
+        },
+        {
+          "title": "张雪刷新「改装摩托车在开阔水域行驶最远距离」吉尼斯世界纪录，这个难度主要在哪里？有什么样的意义？",
+          "url": "https://www.zhihu.com/question/2097654119607673193",
+          "note": "改装摩托水上行驶纪录的技术解析"
+        },
+        {
+          "title": "热播日剧把中国人拍成施暴者，设计中方人员对日本情报人员切指、刺穿腹部情节，为何娱乐化包装的敌意更危险？",
+          "url": "https://www.zhihu.com/question/2097635960213037771",
+          "note": "日剧涉华情节引发舆论批评"
+        },
+        {
+          "title": "上海 90 岁老人在公共楼道住近一年，三名女儿因赡养问题互相推诿，该怎样破局？如何从法律角度解读？",
+          "url": "https://www.zhihu.com/question/2096903756369458155",
+          "note": "赡养纠纷折射法律与伦理困境"
+        },
+        {
+          "title": "烟草第一大省云南前三季度烟草工业负增长，中国烟草市场正在发生什么变化？为何烤烟卖不动了？",
+          "url": "https://www.zhihu.com/question/2096531309044692741",
+          "note": "云南烟草负增长背后的市场变化"
+        }
+      ]
+    }
+  ],
+  "skipped": []
+}
