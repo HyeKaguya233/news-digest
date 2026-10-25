@@ -2,8 +2,8 @@ name: daily-news-digest
 
 on:
   schedule:
-    # UTC 00:00 = 北京时间 08:00。想换时间就改小时（北京时间 = UTC + 8）。
-    - cron: "0 0 * * *"
+    # UTC 02:30 = 北京时间 10:30。想换时间就改小时（北京时间 = UTC + 8）。
+    - cron: "30 2 * * *"
   workflow_dispatch:
     inputs:
       query:
