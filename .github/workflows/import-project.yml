@@ -8,7 +8,6 @@ on:
 
 permissions:
   contents: write
-  workflows: write
 
 jobs:
   import-project:
@@ -26,7 +25,6 @@ jobs:
           $archive = Join-Path $env:RUNNER_TEMP "project-import.zip"
           [IO.File]::WriteAllBytes($archive, [Convert]::FromBase64String($env:PROJECT_B64))
           Expand-Archive -LiteralPath $archive -DestinationPath $env:GITHUB_WORKSPACE -Force
-          Remove-Item -LiteralPath "$env:GITHUB_WORKSPACE/.github/workflows/import-project.yml" -Force
 
       - uses: actions/setup-python@v5
         with:
@@ -49,6 +47,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -- .github/workflows/daily.yml
           git add -A
           git commit -m "chore: import full NewsDigest project and build Windows client"
           git push
