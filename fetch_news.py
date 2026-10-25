@@ -13,6 +13,9 @@
   WECHAT_RSS_URL  你自己的微信 RSS 源（WeRSS / RSSHub 等）
   QMSG_MAX_LEN    QQ 单条消息长度上限，默认 1700 字（Qmsg 硬限制 1800）
   DEEPSEEK_API_KEY 配置后启用模型评审（或 LLM_API_KEY + LLM_BASE_URL + LLM_MODEL）
+  USER_PROFILE    用户职业与兴趣画像，用于「为你推荐」排序
+  INTEREST_QUERIES 个性化搜索词，逗号或竖线分隔
+  SEARCH_QUERY    手动搜索关键词；配置后只推送该关键词的搜索结果
   DRY_RUN=1       只在终端打印，不推送
 """
 
@@ -86,6 +89,33 @@ def make_session() -> requests.Session:
 
 SESSION = make_session()
 _TOPHUB_LOCK = threading.Lock()
+
+
+DEFAULT_PROFILE = (
+    "软件工程师，有自动驾驶从业背景，目前从事手持影像设备软件开发。"
+    "重点关注自动驾驶、机器人、计算机视觉、计算摄影、相机与影像算法、"
+    "嵌入式与边缘计算、C++/Python、AI 工程化、DJI 及消费影像产品。"
+)
+
+DEFAULT_INTEREST_QUERIES = (
+    "autonomous driving",
+    "computer vision",
+    "computational photography",
+    "camera imaging software",
+    "robotics engineering",
+    "DJI",
+)
+
+
+def personal_profile() -> str:
+    return os.environ.get("USER_PROFILE", "").strip() or DEFAULT_PROFILE
+
+
+def interest_queries():
+    raw = os.environ.get("INTEREST_QUERIES", "").strip()
+    parts = re.split(r"[|,，]+", raw) if raw else []
+    queries = [clean(part, 60) for part in parts if part.strip()]
+    return tuple(queries[:8]) or DEFAULT_INTEREST_QUERIES
 
 
 def clean(text: str, limit: int = 80) -> str:
@@ -384,6 +414,133 @@ def fetch_wechat_rss(url: str, limit: int = 5):
     return items
 
 
+def fetch_google_news_search(query: str, limit: int = 4):
+    if feedparser is None:
+        raise RuntimeError("feedparser 未安装")
+    chinese = bool(re.search(r"[\u4e00-\u9fff]", query))
+    plain = not any(token in query.upper() for token in ('"', " OR ", " AND ", "SITE:", "WHEN:"))
+    term = f'"{query}"' if plain and not chinese else query
+    search = term if "when:" in query.lower() else f"{term} when:7d"
+    response = SESSION.get(
+        "https://news.google.com/rss/search",
+        params={
+            "q": search,
+            "hl": "zh-CN" if chinese else "en-US",
+            "gl": "CN" if chinese else "US",
+            "ceid": "CN:zh-Hans" if chinese else "US:en",
+        },
+        timeout=25,
+    )
+    response.raise_for_status()
+    feed = feedparser.parse(response.content)
+    items = []
+    for entry in feed.entries[: limit * 3]:
+        title = clean(entry.get("title", ""))
+        title = re.sub(r"\s-\s[^-]{1,32}$", "", title).strip()
+        items.append(mk(title, entry.get("link", "")))
+        if len(dedupe_items(items)) >= limit:
+            break
+    items = dedupe_items(items)[:limit]
+    if not items:
+        raise RuntimeError(f"Google News 搜索「{query}」为空")
+    return items
+
+
+def fetch_hn_search(query: str, limit: int = 5):
+    cutoff = int(time.time()) - 30 * 86400
+    response = SESSION.get(
+        "https://hn.algolia.com/api/v1/search",
+        params={
+            "query": query,
+            "tags": "story",
+            "numericFilters": f"created_at_i>{cutoff},points>20",
+            "hitsPerPage": max(limit * 3, 10),
+        },
+        timeout=25,
+    )
+    response.raise_for_status()
+    items = []
+    needle = query.lower().strip()
+    tokens = [token for token in re.split(r"[^a-z0-9]+", needle) if len(token) >= 2]
+    for hit in response.json().get("hits") or []:
+        title = hit.get("title") or ""
+        lowered = title.lower()
+        if needle not in lowered and not any(token in lowered for token in tokens):
+            continue
+        object_id = hit.get("objectID") or ""
+        url = hit.get("url") or (
+            f"https://news.ycombinator.com/item?id={object_id}" if object_id else ""
+        )
+        items.append(mk(title, url))
+    items = dedupe_items(items)[:limit]
+    if not items:
+        raise RuntimeError(f"Hacker News 搜索「{query}」为空")
+    return items
+
+
+def fetch_github_search(query: str, limit: int = 5):
+    since = (dt.date.today() - dt.timedelta(days=365)).isoformat()
+    response = SESSION.get(
+        "https://api.github.com/search/repositories",
+        params={
+            "q": f"{query} pushed:>={since} stars:>=20",
+            "sort": "stars",
+            "order": "desc",
+            "per_page": max(limit * 2, 10),
+        },
+        headers={
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+        },
+        timeout=25,
+    )
+    response.raise_for_status()
+    items = []
+    for row in response.json().get("items") or []:
+        repo = row.get("full_name") or ""
+        desc = clean(row.get("description") or "", 54)
+        line = f"{repo} — {desc}" if desc else repo
+        items.append(mk(line, row.get("html_url") or ""))
+    items = dedupe_items(items)[:limit]
+    if not items:
+        raise RuntimeError(f"GitHub 搜索「{query}」为空")
+    return items
+
+
+def fetch_personal_recommendations(limit: int = 10):
+    items = []
+    errors = []
+    for query in interest_queries():
+        try:
+            items.extend(fetch_google_news_search(query, 4))
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{query}: {exc}")
+    items = dedupe_items(items)[:limit]
+    if not items:
+        raise RuntimeError("个性化推荐全部源失败（" + "；".join(errors) + "）")
+    return items
+
+
+def fetch_topic_search(query: str, limit: int = 20):
+    items = []
+    errors = []
+    sources = (
+        ("Google News", lambda: fetch_google_news_search(query, 12)),
+        ("Hacker News", lambda: fetch_hn_search(query, 6)),
+        ("GitHub", lambda: fetch_github_search(query, 5)),
+    )
+    for name, fetcher in sources:
+        try:
+            items.extend(fetcher())
+        except Exception as exc:  # noqa: BLE001
+            log(f"[搜索] {name} 失败：{exc}")
+            errors.append(f"{name}: {exc}")
+    items = dedupe_items(items)[:limit]
+    if not items:
+        raise RuntimeError("搜索源全部失败（" + "；".join(errors) + "）")
+    return items
+
+
 # ---------------------------------------------------------------- 质量处理
 
 
@@ -471,6 +628,8 @@ def shorten_sections(sections, limit: int = 90, max_requests: int = 20):
 
 
 LLM_LIMITS = {
+    "recommend": 6,
+    "search": 10,
     "world": 4,
     "weibo": 6,
     "x": 6,
@@ -507,6 +666,8 @@ def llm_review(sections):
 
     payload = {
         "limits": LLM_LIMITS,
+        "profile": personal_profile(),
+        "search_query": os.environ.get("SEARCH_QUERY", "").strip(),
         "sections": [
             {
                 "key": section["key"],
@@ -528,7 +689,9 @@ def llm_review(sections):
         "2. 删除标题党、广告、软文、无信息量的内容\n"
         "3. 每个板块按重要性从高到低排序，不超过 limits 条\n"
         "4. 每条给一句 20 字以内的中文说明 note，不要复述标题\n"
-        "5. 挑 3 条今天最值得知道的，写成 30 字以内的 highlights\n\n"
+        "5. 挑 3 条今天最值得知道的，写成 30 字以内的 highlights\n"
+        "6. recommend 板块必须贴合 profile，优先技术含量高、与当前工作相关的内容\n"
+        "7. search_query 非空时，search 板块是用户主动搜索，优先直接相关且信息量高的结果\n\n"
         "约束：url 必须原样复制输入中的链接，不得编造或修改；保留原文语言；只输出 JSON。\n\n"
         '输出格式：{"highlights":["..."],"sections":[{"key":"world","items":[{"title":"...","url":"...","note":"..."}]}]}'
     )
@@ -583,7 +746,8 @@ def llm_review(sections):
     reviewed.extend(section for section in sections if section["key"] not in kept)
 
     total = sum(len(section["items"]) for section in reviewed)
-    if total < 8:
+    minimum = 3 if os.environ.get("SEARCH_QUERY", "").strip() else 8
+    if total < minimum:
         log(f"[模型评审] 结果仅 {total} 条，回退到规则版")
         return None
     if dropped:
@@ -595,7 +759,27 @@ def llm_review(sections):
 
 
 def gather_sections():
+    search_query = os.environ.get("SEARCH_QUERY", "").strip()
+    if search_query:
+        errors = []
+        try:
+            items = fetch_topic_search(search_query)
+        except Exception as exc:  # noqa: BLE001
+            log(f"[搜索] 失败：{exc}")
+            items = []
+            errors.append("搜索")
+        sections = [
+            {
+                "key": "search",
+                "icon": "🔎",
+                "title": f"搜索：{clean(search_query, 24)}",
+                "items": items,
+            }
+        ]
+        return apply_quality_rules(sections), errors
+
     jobs = [
+        ("recommend", "🎯", "为你推荐", fetch_personal_recommendations),
         ("world", "🌍", "海外要闻", fetch_world_news),
         ("weibo", "🔥", "微博热搜", fetch_weibo_hot),
         ("x", "🐦", "X 全球趋势", fetch_x_trends),
@@ -656,8 +840,10 @@ def fit(lines, limit: int) -> str:
     return "\n".join(kept).strip()
 
 
-def render_plain(sections, stamp: str, limit: int, highlights=None) -> str:
-    lines = [f"📰 每日简报 · {stamp}", ""]
+def render_plain(
+    sections, stamp: str, limit: int, highlights=None, heading: str = "每日简报"
+) -> str:
+    lines = [f"📰 {heading} · {stamp}", ""]
     if highlights:
         lines.append("⭐ 今日要点")
         for text in highlights:
@@ -678,8 +864,10 @@ def render_plain(sections, stamp: str, limit: int, highlights=None) -> str:
     return fit(lines, limit)
 
 
-def render_markdown(sections, stamp: str, highlights=None) -> str:
-    lines = [f"## 📰 每日简报 · {stamp}", ""]
+def render_markdown(
+    sections, stamp: str, highlights=None, heading: str = "每日简报"
+) -> str:
+    lines = [f"## 📰 {heading} · {stamp}", ""]
     if highlights:
         lines.append("### ⭐ 今日要点")
         for text in highlights:
@@ -873,7 +1061,13 @@ def main() -> int:
 
     now = dt.datetime.now(dt.timezone(dt.timedelta(hours=8)))
     stamp = now.strftime("%Y-%m-%d %H:%M")
-    title = now.strftime("每日简报 %m-%d")
+    search_query = os.environ.get("SEARCH_QUERY", "").strip()
+    heading = "搜索简报" if search_query else "每日简报"
+    title = (
+        f"搜索 {clean(search_query, 18)}"
+        if search_query
+        else now.strftime("每日简报 %m-%d")
+    )
 
     sections, errors = gather_sections()
     sections = shorten_sections(sections)
@@ -885,14 +1079,17 @@ def main() -> int:
     max_len = int(os.environ.get("QMSG_MAX_LEN", "1700"))
 
     if total < 3:
-        plain = (
-            f"⚠️ 每日简报 {now:%m-%d} 抓取异常，仅获得 {total} 条内容。\n"
-            "可能是数据源改版或被限流，请到 Actions 日志查看。"
-        )
+        if search_query:
+            plain = f"⚠️ 搜索「{clean(search_query, 30)}」没有获得有效结果，请换个关键词再试。"
+        else:
+            plain = (
+                f"⚠️ 每日简报 {now:%m-%d} 抓取异常，仅获得 {total} 条内容。\n"
+                "可能是数据源改版或被限流，请到 Actions 日志查看。"
+            )
         markdown = plain
     else:
-        plain = render_plain(sections, stamp, 10 ** 6, highlights)
-        markdown = render_markdown(sections, stamp, highlights)
+        plain = render_plain(sections, stamp, 10 ** 6, highlights, heading=heading)
+        markdown = render_markdown(sections, stamp, highlights, heading=heading)
         if errors:
             plain += f"\n\n（本次跳过：{'、'.join(errors)}）"
             markdown += f"\n\n> 本次跳过：{'、'.join(errors)}"
