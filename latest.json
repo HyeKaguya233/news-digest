@@ -1,17 +1,17 @@
 {
   "schema": 1,
   "kind": "daily",
-  "date": "2026-10-28",
-  "generated_at": "2026-10-28T16:45:15+08:00",
-  "title": "每日简报 10-28",
+  "date": "2026-10-29",
+  "generated_at": "2026-10-29T16:41:41+08:00",
+  "title": "每日简报 10-29",
   "heading": "每日简报",
-  "briefing": "今天最值得关注的是技术落地与政策动向。GM 明确将面向皮卡和 SUV 推进“脱眼”自动驾驶，AWS 给出车队级边缘视觉的全生命周期方案，DJI 多款机型发布固件更新，与手持影像和自动驾驶工作直接相关。AI 方面，DeepSeek 新版模型调用量单周登顶，GitHub 趋势被 AI 代理与设计技能类项目占据。影视侧，首部获“龙标”的 AI 电影进入院线，DaVinci Resolve 与 Blackmagic Cloud 被纳入剪辑流程，暑期档影片数量多但缺大片。医疗与民生方面，多发性硬化诊疗二十年变迁综述、毕节中医医院病历记录问题被处罚、国家卫健委回应医疗意外险与第三方鉴定，均属可核验进展。",
+  "briefing": "今天值得关注的技术主线是自动驾驶与边缘视觉：Bolt 与 Stellantis 计划在大巴黎地区开展自动驾驶实验，AWS 发布边缘端全生命周期计算机视觉方案，DJI 遥控器也推送了新固件。消费影像方面，OPPO 推出三枚 200MP 摄像头的机型，计算摄影继续用软件弥补传感器。影视后期领域，Choco Film 将 DaVinci Resolve Studio 与 Blackmagic Cloud 纳入剪辑流程；医疗方面，多发性硬化症治疗的真实世界长期结局研究，以及施贵宝一期试验出现患者死亡的消息，都值得留意。国内方面，华为乾崑智驾公开赛报名人数超过十万，反映智能驾驶热度；医保社保服务下沉乡镇，属于可执行的政策动态。",
   "highlights": [
-    "GM 推进皮卡 SUV 脱眼自动驾驶",
-    "DJI 多款无人机与影像设备固件更新",
-    "DeepSeek 新版模型调用量单周登顶",
-    "首部龙标 AI 电影登陆院线",
-    "卫健委回应医疗意外险与第三方鉴定"
+    "Bolt 与 Stellantis 拟 2028 年在大巴黎开展自动驾驶实验",
+    "AWS 发布边缘端计算机视觉全生命周期方案",
+    "DJI RC 系列遥控器推送新固件",
+    "OPPO 新机首发三枚 200MP 摄像头",
+    "多发性硬化症治疗真实世界长期结局研究发布"
   ],
   "count": 43,
   "sections": [
@@ -21,40 +21,40 @@
       "title": "你的推荐",
       "items": [
         {
-          "title": "GM targets ‘eyes-off’ autonomous driving for pickups, SUVs",
-          "url": "https://is.gd/jTFPCe",
-          "note": "通用明确皮卡SUV脱眼自动驾驶目标",
+          "title": "Bolt, Stellantis plan autonomous driving experiment in Greater Paris from 2028…",
+          "url": "https://is.gd/IJU07R",
+          "note": "自动驾驶落地欧洲的新进展",
           "source": "Reuters"
         },
         {
-          "title": "Fleet-wide computer vision lifecycle at the edge with SageMaker SDK v3",
+          "title": "Fleet-wide computer vision lifecycle at the edge with SageMaker SDK v3 | Amazon…",
           "url": "https://is.gd/Bj7ku6",
-          "note": "边缘视觉全生命周期工程实践参考",
+          "note": "边缘视觉工程化参考方案",
           "source": "Amazon Web Services (AWS)"
         },
         {
-          "title": "DJI updates Mini 5 Pro, Air 3S, and Mavic 4 Pro with new firmware",
-          "url": "https://is.gd/ANEo5b",
-          "note": "大疆多款机型固件更新，直接相关",
+          "title": "DJI RC, RC 2, and RC Pro 2 get new firmware updates",
+          "url": "https://is.gd/TrfS2u",
+          "note": "与手持影像工作直接相关",
           "source": "DroneDJ"
         },
         {
           "title": "Computational photography on mobile: when software does the sensor's job",
           "url": "https://is.gd/j4TNH0",
-          "note": "手机计算摄影软硬协同的行业梳理",
+          "note": "计算摄影替代硬件的思路",
           "source": "Foro3D"
         },
         {
           "title": "OPPO reveals Find X10 series – with the world’s first-ever triple 200MP camera…",
           "url": "https://is.gd/W1w4vS",
-          "note": "三颗两亿像素影像方案值得关注",
+          "note": "消费影像硬件新标杆",
           "source": "Amateur Photographer"
         },
         {
-          "title": "GM Tech Day: Autonomous Driving, More Helpful OnStar, Faster Product Developmen…",
-          "url": "https://is.gd/7pzsPJ",
-          "note": "通用科技日披露自动驾驶研发节奏",
-          "source": "Car and Driver"
+          "title": "The ChatGPT moment in transportation? Autonomous driving nears commercial infle…",
+          "url": "https://is.gd/k4sm6T",
+          "note": "自动驾驶商业化拐点分析",
+          "source": "T. Rowe Price"
         }
       ]
     },
@@ -64,52 +64,52 @@
       "title": "TA 的推荐",
       "items": [
         {
-          "title": "首部“龙标”AI电影登陆蓉城院线：技术跑通之后，故事能否说服观众？丨科技观察",
-          "url": "https://is.gd/qwcjeD",
-          "note": "首部龙标AI电影上映，观察其成色",
-          "source": "手机新浪网"
-        },
-        {
           "title": "Choco Film公司将DaVinci Resolve Studio和Blackmagic Cloud纳入其剪辑工作流程",
           "url": "https://is.gd/oIu6iu",
-          "note": "后期公司采用达芬奇与云协作流程",
+          "note": "后期剪辑云端协作案例",
           "source": "Blackmagic Design"
         },
         {
-          "title": "多发性硬化二十年诊疗变迁：复发活动与独立于复发的残疾进展的分离趋势",
-          "url": "https://is.gd/hx9SKr",
-          "note": "多发性硬化诊疗二十年趋势综述",
+          "title": "阿仑珠单抗治疗复发缓解型多发性硬化症的长期结局：一项聚焦那他珠单抗后治疗序贯的真实世界队列研究",
+          "url": "https://is.gd/4aWrz7",
+          "note": "MS治疗序贯的真实世界证据",
           "source": "生物通"
         },
         {
-          "title": "强制推行患者医疗意外险？成立医疗损害第三方鉴定机构？国家卫健委回应",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XZU8wXzFpVldJMGdGWEV5Q2ZrZ0lrUnFJLVhJVWVGNGNxdVFKMHk0UG95WF9sWDlWTkF6UDNzZVJ3VXZuMnhPcXRNRDdkdHJhSmxpa0lkSHAzc3M1YmRkdWxCTWRqUDlUQmR3alNIX3JTRDFuQnlrbg?oc=5",
-          "note": "卫健委回应医疗意外险与鉴定机制",
-          "source": "新浪财经"
+          "title": "施贵宝股价在Breakfree-2多发性硬化症1期临床试验中出现患者死亡后下跌",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbkc3MWdJZFlVcTlPam9KbWM1V0dseWkyamEzelJ2bjlVVDBfcWxUbmtCVGNOcFJNRm5ZWUljVzRUUDFDd09scE4yVEFmTVNhajBjU3gtYTVEcnBjeDY5TjZLa3R0aGJtUWtTUjFBRVM0TWlBUnVnS25oWlVzX3Y4TlB1Q09RVzdlSUVxVjBOelNQRFROQ1VBWjFhbW9nd0JXdlhJYVJTaGpCZFVKSDBXaA?oc=5",
+          "note": "MS新药试验安全性事件",
+          "source": "Moomoo"
+        },
+        {
+          "title": "票房｜周票房再度不足2亿元 国内首部AI电影观影人次4万(含视频)",
+          "url": "https://is.gd/0T1oPd",
+          "note": "周票房与AI电影表现",
+          "source": "财新"
         },
         {
           "title": "抢救记录缺签字、死亡病历讨论记录无签名 毕节市中医医院被罚1.5万元",
-          "url": "https://is.gd/AuyMzD",
-          "note": "病历记录不规范被处罚，事实清楚",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE50NVZJdzRQOXEyNE5ZenJhdnBpMVozdlIzWHdCRTk0LVY3TUVTX1Z6UDJTcHRDbDhWc3BOVzVRa2ppd05hUHZQMzduRmdHNFZ2NmVj?oc=5",
+          "note": "病历书写违规被处罚",
           "source": "信网"
-        },
-        {
-          "title": "周星驰新片《功夫女足》热度领跑！超100部电影集结 暑期档仍缺大片压阵",
-          "url": "https://is.gd/Sl29ue",
-          "note": "暑期档影片数量多但缺头部大片",
-          "source": "财联社"
         },
         {
           "title": "桂东县：社保政策赶大集 服务暖心进乡镇",
           "url": "https://is.gd/LSVsnL",
-          "note": "基层社保政策宣传下沉案例",
+          "note": "社保服务下沉乡镇",
           "source": "新湖南"
         },
         {
-          "title": "抖音时尚设计师大赛决赛暨抖音时尚趋势大秀在上海举行",
-          "url": "https://is.gd/DDqKUS",
-          "note": "平台时尚趋势与设计师生态动向",
-          "source": "欢迎访问ConCall"
+          "title": "“我已经爱上武汉了”——全球时尚掌门人集体表白",
+          "url": "https://is.gd/sRHIzE",
+          "note": "时尚品牌与城市消费动向",
+          "source": "武汉市商务局"
+        },
+        {
+          "title": "闺蜜第一次出国去哪里？3个免签入门地实测对比+FAQ",
+          "url": "https://is.gd/ocxJew",
+          "note": "免签目的地实用对比",
+          "source": "手机新浪网"
         }
       ]
     },
@@ -119,28 +119,28 @@
       "title": "海外要闻",
       "items": [
         {
-          "title": "对话国际关系学者朱兆麟：巴西大选结束 总统卢拉顺利连任",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUUN4Q1hLc3hid3J5cS1yZVRDTklDbWFPT3pjTGRVVk52OGRLU1VlSC01dWRGeW9tTlVFWjBpX0xENlpGblpTSGJ0cl93cldmalpzRHhEYjhnVlNzT2lMRlhtZE5nbFFfYjdGMlRUdHh4Wk9ZOFpjUWRNODdvZjZqNkRobXNRLU10S24xQzNMMUdlSGhl?oc=5",
-          "note": "巴西大选落幕，卢拉连任",
-          "source": "紫荆网"
+          "title": "伊朗称在霍尔木兹海峡上空击落美军无人机",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE94bjJoSmNGUUJaeEpxVHNXUnpFcUhlLUNXOGNyZHBkSFhYTFNTU1dab0M2LU93Q3RiTUxkNTBJcVU0Q1c1THN1LWVzMi1WVDB5d0VHbGxpUnZUVWdVazU1bWhPanNZTHlxWnNCSmlOUlQ3RzdZUm1HX3RtbTZlMmc?oc=5",
+          "note": "海湾局势再度紧张",
+          "source": "新华网"
         },
         {
-          "title": "梅拉尼娅：俄乌奥列什基停火提前生效范围已扩大_国际要闻",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBycmxQTDluaEVISnU0Skw1Ukw3WlhwT09MZ3E4dWREb25XM0l4N05DZ2ZUQURtQVRReTJYME53X2tqalFqOUxfekdCNmQzUmtOampQR3JLZmdjRnZpNTRrNEVncDNRZm1OZ2c?oc=5",
-          "note": "俄乌局部停火范围扩大",
-          "source": "中国甘肃网"
+          "title": "以色列议会选举初步计票：两大阵营均未获多数席位",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5hMzlYZmZUOE83RlkzODlFcFdnVUo0aWFxSE4wWEdYZ2NEX3pGdVJwdzNldFdoc2VuVlFoTFNGbVQxTjZaUTExR2NYUXgyYnRVTmNtRExYMUVNdVhqVVZF?oc=5",
+          "note": "以色列政局走向未定",
+          "source": "人民政协网"
         },
         {
-          "title": "每月生产300枚导弹、1万架无人机？伊朗加紧战备工作",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1UUDRGU05wUkliZE9IVUkxemhXUGNmOE5VdVAyU2pGMWdhRDdLR0pHSVVRUDVqYjk4M1ZQYjZEcHRGb1MtcUV2ZWhnMUZxcTZWMUpZc0FPMGNEQlBnWUNxZlkzWTlmVVNs?oc=5",
-          "note": "伊朗战备产能数据引关注",
+          "title": "普京称赞马斯克是天才 称俄正打造对标“星链”的卫星系统",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9HZXZ5Qjg5WmZqQjFMOWFla2JZb1NvTzBXU0xGOFZjMGIxNW9ac19STnlXTWh5ajFrUXQ5ZHk3S3FteWdVYkYwUmYyR2ZHODdxd1BQS0JrZ2tSb0t5ZFVJWHY2V3NVS3Na?oc=5",
+          "note": "俄推进卫星互联网计划",
           "source": "中国新闻网"
         },
         {
-          "title": "土耳其官员：COP31气候大会将聚焦落实",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ScXJHMVB2SG1SVUVsc3BCR3lQMjZNWWlaNEV2eEdvTnJjYkQyYlpPZVd1bWlYNDM3aDUzUmJvRWh6b0YydEFTNVpvWmtSY3lGbnIwQUtZeXJKM3B3Ymdmd3A1MHE1bk5Z?oc=5",
-          "note": "COP31将聚焦气候承诺落实",
-          "source": "中国新闻网"
+          "title": "三段录音还原西班牙列车相撞惨剧 首相称“将调查到底”",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1zeEZXN1BfMXVhMGZIM1FqbnVFcDRDRnNmSVg1Y1dFQ3NMM2tkZGVQYnFfMHBjQ2d3WXFIQ3daUVVQX1BzMkxpOWRpczhOWHVMX2s3d2ZQODI4ZGdpZUJB?oc=5",
+          "note": "西班牙铁路事故追责",
+          "source": "华商网"
         }
       ]
     },
@@ -150,39 +150,39 @@
       "title": "微博热搜",
       "items": [
         {
-          "title": "中方重视姆巴佩作出的道歉",
-          "url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E6%96%B9%E9%87%8D%E8%A7%86%E5%A7%86%E5%B7%B4%E4%BD%A9%E4%BD%9C%E5%87%BA%E7%9A%84%E9%81%93%E6%AD%89",
-          "note": "外交部回应姆巴佩道歉事件",
+          "title": "超十万人报名华为乾崑智驾公开赛",
+          "url": "https://s.weibo.com/weibo?q=%E8%B6%85%E5%8D%81%E4%B8%87%E4%BA%BA%E6%8A%A5%E5%90%8D%E5%8D%8E%E4%B8%BA%E4%B9%BE%E5%B4%91%E6%99%BA%E9%A9%BE%E5%85%AC%E5%BC%80%E8%B5%9B",
+          "note": "智驾赛事热度反映用户关注",
           "source": ""
         },
         {
-          "title": "海信称与姆巴佩无商业合作",
-          "url": "https://s.weibo.com/weibo?q=%E6%B5%B7%E4%BF%A1%E7%A7%B0%E4%B8%8E%E5%A7%86%E5%B7%B4%E4%BD%A9%E6%97%A0%E5%95%86%E4%B8%9A%E5%90%88%E4%BD%9C",
-          "note": "赞助商澄清与球员合作关系",
+          "title": "不会打方结女博士曾在各个科室轮转",
+          "url": "https://s.weibo.com/weibo?q=%E4%B8%8D%E4%BC%9A%E6%89%93%E6%96%B9%E7%BB%93%E5%A5%B3%E5%8D%9A%E5%A3%AB%E6%9B%BE%E5%9C%A8%E5%90%84%E4%B8%AA%E7%A7%91%E5%AE%A4%E8%BD%AE%E8%BD%AC",
+          "note": "医疗人才培养争议持续",
           "source": ""
         },
         {
-          "title": "法国媒体批姆巴佩团队极度短视",
-          "url": "https://s.weibo.com/weibo?q=%E6%B3%95%E5%9B%BD%E5%AA%92%E4%BD%93%E6%89%B9%E5%A7%86%E5%B7%B4%E4%BD%A9%E5%9B%A2%E9%98%9F%E6%9E%81%E5%BA%A6%E7%9F%AD%E8%A7%86",
-          "note": "法媒批评球员团队公关处理",
+          "title": "我国农产品全面提质路线图来了",
+          "url": "https://s.weibo.com/weibo?q=%E6%88%91%E5%9B%BD%E5%86%9C%E4%BA%A7%E5%93%81%E5%85%A8%E9%9D%A2%E6%8F%90%E8%B4%A8%E8%B7%AF%E7%BA%BF%E5%9B%BE%E6%9D%A5%E4%BA%86",
+          "note": "农产品质量政策发布",
           "source": ""
         },
         {
-          "title": "我国工业结构向新向优向好",
-          "url": "https://s.weibo.com/weibo?q=%E6%88%91%E5%9B%BD%E5%B7%A5%E4%B8%9A%E7%BB%93%E6%9E%84%E5%90%91%E6%96%B0%E5%90%91%E4%BC%98%E5%90%91%E5%A5%BD",
-          "note": "官方口径谈工业结构优化",
+          "title": "三丽鸥致歉",
+          "url": "https://s.weibo.com/weibo?q=%E4%B8%89%E4%B8%BD%E9%B8%A5%E8%87%B4%E6%AD%89",
+          "note": "品牌联名争议回应",
           "source": ""
         },
         {
-          "title": "Shanks回应AL止步十六强",
-          "url": "https://s.weibo.com/weibo?q=Shanks%E5%9B%9E%E5%BA%94AL%E6%AD%A2%E6%AD%A5%E5%8D%81%E5%85%AD%E5%BC%BA",
-          "note": "电竞战队止步十六强引热议",
+          "title": "长期吃西地那非的人嘴太严了",
+          "url": "https://s.weibo.com/weibo?q=%E9%95%BF%E6%9C%9F%E5%90%83%E8%A5%BF%E5%9C%B0%E9%82%A3%E9%9D%9E%E7%9A%84%E4%BA%BA%E5%98%B4%E5%A4%AA%E4%B8%A5%E4%BA%86",
+          "note": "用药话题引发讨论",
           "source": ""
         },
         {
-          "title": "将门独后预告好多人",
-          "url": "https://s.weibo.com/weibo?q=%E5%B0%86%E9%97%A8%E7%8B%AC%E5%90%8E%E9%A2%84%E5%91%8A%E5%A5%BD%E5%A4%9A%E4%BA%BA",
-          "note": "剧集预告发布带动讨论",
+          "title": "中学小卖部只卖牛奶和水家长发声",
+          "url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E5%AD%A6%E5%B0%8F%E5%8D%96%E9%83%A8%E5%8F%AA%E5%8D%96%E7%89%9B%E5%A5%B6%E5%92%8C%E6%B0%B4%E5%AE%B6%E9%95%BF%E5%8F%91%E5%A3%B0",
+          "note": "校园食品管理争议",
           "source": ""
         }
       ]
@@ -193,39 +193,39 @@
       "title": "X 全球趋势",
       "items": [
         {
-          "title": "#AnantAmbani",
-          "url": "https://getdaytrends.com/trend/%23AnantAmbani/",
-          "note": "印度安巴尼家族话题登榜",
+          "title": "Mustafa Kemal Atatürk",
+          "url": "https://getdaytrends.com/trend/Mustafa%20Kemal%20Atat%C3%BCrk/",
+          "note": "土耳其纪念日相关趋势",
           "source": ""
         },
         {
-          "title": "#jioipolisting",
-          "url": "https://getdaytrends.com/trend/%23jioipolisting/",
-          "note": "印度Jio IPO上市话题升温",
+          "title": "#29Ekim",
+          "url": "https://getdaytrends.com/trend/%2329Ekim/",
+          "note": "土耳其共和国日话题",
           "source": ""
         },
         {
-          "title": "#IshaAmbani",
-          "url": "https://getdaytrends.com/trend/%23IshaAmbani/",
-          "note": "安巴尼家族成员相关讨论",
+          "title": "#モンハンアウトランダーズ",
+          "url": "https://getdaytrends.com/trend/%23%E3%83%A2%E3%83%B3%E3%83%8F%E3%83%B3%E3%82%A2%E3%82%A6%E3%83%88%E3%83%A9%E3%83%B3%E3%83%80%E3%83%BC%E3%82%BA/",
+          "note": "日本游戏新作讨论",
           "source": ""
         },
         {
-          "title": "#AkashAmbani",
-          "url": "https://getdaytrends.com/trend/%23AkashAmbani/",
-          "note": "安巴尼家族成员相关讨论",
+          "title": "#たまごっち診断",
+          "url": "https://getdaytrends.com/trend/%23%E3%81%9F%E3%81%BE%E3%81%94%E3%81%A3%E3%81%A1%E8%A8%BA%E6%96%AD/",
+          "note": "日本互动话题走热",
           "source": ""
         },
         {
-          "title": "Blazers",
-          "url": "https://getdaytrends.com/trend/Blazers/",
-          "note": "开拓者队相关话题上榜",
+          "title": "MAGIC LOVER Q6",
+          "url": "https://getdaytrends.com/trend/MAGIC%20LOVER%20Q6/",
+          "note": "娱乐话题上榜",
           "source": ""
         },
         {
-          "title": "#出身地当てます",
-          "url": "https://getdaytrends.com/trend/%23%E5%87%BA%E8%BA%AB%E5%9C%B0%E5%BD%93%E3%81%A6%E3%81%BE%E3%81%99/",
-          "note": "日本猜出身地互动话题",
+          "title": "#sonsuzadek",
+          "url": "https://getdaytrends.com/trend/%23sonsuzadek/",
+          "note": "土耳其语话题趋势",
           "source": ""
         }
       ]
@@ -236,33 +236,33 @@
       "title": "GitHub Trending",
       "items": [
         {
-          "title": "Nutlope/hallmark — Anti-AI-slop design skill for Claude Code,…（2,830 stars toda…",
-          "url": "https://github.com/Nutlope/hallmark",
-          "note": "面向编码代理的设计技能项目",
+          "title": "HKUDS/DeepTutor — DeepTutor: Lifelong Personalized Tutoring.…（2,371 stars today）",
+          "url": "https://github.com/HKUDS/DeepTutor",
+          "note": "个性化教学智能体项目",
           "source": ""
         },
         {
-          "title": "makecindy/cindy — Consider it done. The open-source AI agent…（1,465 stars today）",
-          "url": "https://github.com/makecindy/cindy",
-          "note": "开源AI代理项目热度高",
-          "source": ""
-        },
-        {
-          "title": "pbakaus/impeccable — The design vocabulary for your coding agent…（1,449 stars t…",
-          "url": "https://github.com/pbakaus/impeccable",
-          "note": "为编码代理提供设计词汇",
-          "source": ""
-        },
-        {
-          "title": "elayadesign/ai-design-skills（1,395 stars today）",
+          "title": "elayadesign/ai-design-skills（2,139 stars today）",
           "url": "https://github.com/elayadesign/ai-design-skills",
-          "note": "AI设计技能集合项目",
+          "note": "AI设计技能库热度高",
           "source": ""
         },
         {
-          "title": "affaan-m/ECC — The agent harness performance optimization…（1,165 stars today）",
-          "url": "https://github.com/affaan-m/ECC",
-          "note": "代理框架性能优化工具",
+          "title": "Nutlope/hallmark — Anti-AI-slop design skill for Claude Code,…（2,110 stars toda…",
+          "url": "https://github.com/Nutlope/hallmark",
+          "note": "面向编码代理的设计技能",
+          "source": ""
+        },
+        {
+          "title": "pbakaus/impeccable — The design vocabulary for your coding agent…（1,472 stars t…",
+          "url": "https://github.com/pbakaus/impeccable",
+          "note": "编码代理设计词汇工具",
+          "source": ""
+        },
+        {
+          "title": "obra/superpowers — An agentic skills framework & software deve…（1,095 stars tod…",
+          "url": "https://github.com/obra/superpowers",
+          "note": "智能体技能框架",
           "source": ""
         }
       ]
@@ -273,21 +273,21 @@
       "title": "Facebook / Meta 动态",
       "items": [
         {
-          "title": "Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built f…",
-          "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
-          "note": "Meta个人AI代理在新加坡上线",
+          "title": "Meta Partners With Five US Universities to Accelerate Medical and Scientific Br…",
+          "url": "https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs/",
+          "note": "Meta与高校合作医学研究",
           "source": ""
         },
         {
-          "title": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Th…",
-          "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
-          "note": "AI眼镜用于博物馆无障碍观展",
+          "title": "Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built f…",
+          "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+          "note": "个人AI代理落地新加坡",
           "source": ""
         },
         {
           "title": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Produc…",
           "url": "https://about.fb.com/news/2026/10/more-than-three-quarters-of-small-business-owners-say-ai-makes-them-more-productive-but-most-need-more-guidance/",
-          "note": "小企业主AI使用调研数据",
+          "note": "小企业AI使用调查",
           "source": ""
         }
       ]
@@ -298,33 +298,33 @@
       "title": "中文热榜",
       "items": [
         {
-          "title": "DeepSeek 新版模型单周调用量登顶全球首位，环比暴增 801%，该模型为什么能实现登顶？意味着什么？",
-          "url": "https://www.zhihu.com/question/2098096577525172086",
-          "note": "DeepSeek新版调用量暴增登顶",
+          "title": "如何理解梁文锋「在颠覆性的技术面前，闭源形成的护城河是短暂的」这一判断？",
+          "url": "https://www.zhihu.com/question/2098733383778149122",
+          "note": "开源与闭源护城河讨论",
           "source": ""
         },
         {
-          "title": "央媒称不认可皇马表态，此前皇马称姆巴佩仅代表个人，俱乐部和中国赞助商合作照常，皇马为何敢如此「傲慢」？",
-          "url": "https://www.zhihu.com/question/2098687138820616288",
-          "note": "央媒与皇马就表态分歧发酵",
+          "title": "如何评价亚马逊前华人女工程师疑似按照 ChatGPT 的建议自行减少抗癫痫药物后猝死这一事件？",
+          "url": "https://www.zhihu.com/question/2098895782283841766",
+          "note": "AI建议与用药风险",
           "source": ""
         },
         {
-          "title": "外交部回应姆巴佩道歉，「我们重视当事人作出的道歉」，姆巴佩事件的后续走向还有哪些可能性？",
-          "url": "https://www.zhihu.com/question/2098798235125019683",
-          "note": "事件后续走向讨论",
+          "title": "科普书出现「双头虾」图片，出版社称正在下架召回，为何出现如此明显错误？科普类出版该限制 AI 配图吗？",
+          "url": "https://www.zhihu.com/question/2098771415411291576",
+          "note": "AI配图错误引发召回",
           "source": ""
         },
         {
-          "title": "曝国产 TOP5 厂商将集体入局阔直板手机，这一形态会成为未来主流吗？",
-          "url": "https://www.zhihu.com/question/2098187701409297325",
-          "note": "手机形态变化与影像模组相关",
+          "title": "如何看待 2026 年 10 月 28 日，比亚迪员工数突破 102 万人？",
+          "url": "https://www.zhihu.com/question/2098833611659154592",
+          "note": "车企规模与就业讨论",
           "source": ""
         },
         {
-          "title": "以色列议会选举投票结束，出口民调显示内塔尼亚胡阵营未过半，如何理解这一结果？内塔尼亚胡会面临什么下场？",
-          "url": "https://www.zhihu.com/question/2098347359297959735",
-          "note": "以色列选举出口民调结果",
+          "title": "媒体曝撒尿牛肉味丸原料多为鸡脖泥，牛肉味纯靠牛肉膏，这类速冻肉丸存在哪些食品安全隐患？这算违法吗？",
+          "url": "https://www.zhihu.com/question/2098700998789304471",
+          "note": "速冻肉丸食品安全质疑",
           "source": ""
         }
       ]
