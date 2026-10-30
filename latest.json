@@ -1,17 +1,17 @@
 {
   "schema": 1,
   "kind": "daily",
-  "date": "2026-10-29",
-  "generated_at": "2026-10-29T16:41:41+08:00",
-  "title": "每日简报 10-29",
+  "date": "2026-10-30",
+  "generated_at": "2026-10-30T16:47:44+08:00",
+  "title": "每日简报 10-30",
   "heading": "每日简报",
-  "briefing": "今天值得关注的技术主线是自动驾驶与边缘视觉：Bolt 与 Stellantis 计划在大巴黎地区开展自动驾驶实验，AWS 发布边缘端全生命周期计算机视觉方案，DJI 遥控器也推送了新固件。消费影像方面，OPPO 推出三枚 200MP 摄像头的机型，计算摄影继续用软件弥补传感器。影视后期领域，Choco Film 将 DaVinci Resolve Studio 与 Blackmagic Cloud 纳入剪辑流程；医疗方面，多发性硬化症治疗的真实世界长期结局研究，以及施贵宝一期试验出现患者死亡的消息，都值得留意。国内方面，华为乾崑智驾公开赛报名人数超过十万，反映智能驾驶热度；医保社保服务下沉乡镇，属于可执行的政策动态。",
+  "briefing": "今日要闻：Bolt 与 Stellantis 计划 2028 年起在大巴黎地区开展自动驾驶试验，大众合资与 Xpeng 获准推进无人驾驶，自动驾驶商业化继续提速。技术侧，AWS 介绍边缘端计算机视觉全生命周期方案，移动端计算摄影与 DJI 遥控器固件更新也值得影像从业者关注。海外方面，以色列议会选举计票结束，内塔尼亚胡阵营议席未过半；西班牙高铁相撞事故初步指向信号与调度问题。医疗与影视方面，多发性硬化新药试验出现患者死亡，需关注后续披露；Blackmagic 工作流案例与周票房数据反映行业现状。",
   "highlights": [
-    "Bolt 与 Stellantis 拟 2028 年在大巴黎开展自动驾驶实验",
+    "Bolt 与 Stellantis 拟 2028 年在大巴黎开展自动驾驶试验",
+    "大众合资与 Xpeng 获无人驾驶相关许可，竞赛升温",
     "AWS 发布边缘端计算机视觉全生命周期方案",
-    "DJI RC 系列遥控器推送新固件",
-    "OPPO 新机首发三枚 200MP 摄像头",
-    "多发性硬化症治疗真实世界长期结局研究发布"
+    "以色列选举计票结束，内塔尼亚胡阵营未过半",
+    "多发性硬化新药试验现患者死亡，施贵宝股价下跌"
   ],
   "count": 43,
   "sections": [
@@ -23,38 +23,38 @@
         {
           "title": "Bolt, Stellantis plan autonomous driving experiment in Greater Paris from 2028…",
           "url": "https://is.gd/IJU07R",
-          "note": "自动驾驶落地欧洲的新进展",
+          "note": "欧洲自动驾驶落地再添新玩家",
           "source": "Reuters"
+        },
+        {
+          "title": "China grants permits to VW joint venture and Xpeng as driverless car race build…",
+          "url": "https://is.gd/v9n7yA",
+          "note": "国内无人驾驶许可推进，竞争加速",
+          "source": "South China Morning Post"
         },
         {
           "title": "Fleet-wide computer vision lifecycle at the edge with SageMaker SDK v3 | Amazon…",
           "url": "https://is.gd/Bj7ku6",
-          "note": "边缘视觉工程化参考方案",
+          "note": "边缘视觉模型全生命周期工程实践",
           "source": "Amazon Web Services (AWS)"
-        },
-        {
-          "title": "DJI RC, RC 2, and RC Pro 2 get new firmware updates",
-          "url": "https://is.gd/TrfS2u",
-          "note": "与手持影像工作直接相关",
-          "source": "DroneDJ"
         },
         {
           "title": "Computational photography on mobile: when software does the sensor's job",
           "url": "https://is.gd/j4TNH0",
-          "note": "计算摄影替代硬件的思路",
+          "note": "手机计算摄影替代硬件的发展脉络",
           "source": "Foro3D"
         },
         {
-          "title": "OPPO reveals Find X10 series – with the world’s first-ever triple 200MP camera…",
-          "url": "https://is.gd/W1w4vS",
-          "note": "消费影像硬件新标杆",
-          "source": "Amateur Photographer"
+          "title": "DJI RC, RC 2, and RC Pro 2 get new firmware updates",
+          "url": "https://is.gd/TrfS2u",
+          "note": "DJI 遥控器固件更新，影像用户可关注",
+          "source": "DroneDJ"
         },
         {
-          "title": "The ChatGPT moment in transportation? Autonomous driving nears commercial infle…",
-          "url": "https://is.gd/k4sm6T",
-          "note": "自动驾驶商业化拐点分析",
-          "source": "T. Rowe Price"
+          "title": "I compared this year's two best camera phones to crown an ultimate champion",
+          "url": "https://is.gd/Wyq60M",
+          "note": "年度影像旗舰对比，算法差异明显",
+          "source": "Android Authority"
         }
       ]
     },
@@ -66,49 +66,49 @@
         {
           "title": "Choco Film公司将DaVinci Resolve Studio和Blackmagic Cloud纳入其剪辑工作流程",
           "url": "https://is.gd/oIu6iu",
-          "note": "后期剪辑云端协作案例",
+          "note": "后期工作流上云的落地案例",
           "source": "Blackmagic Design"
-        },
-        {
-          "title": "阿仑珠单抗治疗复发缓解型多发性硬化症的长期结局：一项聚焦那他珠单抗后治疗序贯的真实世界队列研究",
-          "url": "https://is.gd/4aWrz7",
-          "note": "MS治疗序贯的真实世界证据",
-          "source": "生物通"
         },
         {
           "title": "施贵宝股价在Breakfree-2多发性硬化症1期临床试验中出现患者死亡后下跌",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbkc3MWdJZFlVcTlPam9KbWM1V0dseWkyamEzelJ2bjlVVDBfcWxUbmtCVGNOcFJNRm5ZWUljVzRUUDFDd09scE4yVEFmTVNhajBjU3gtYTVEcnBjeDY5TjZLa3R0aGJtUWtTUjFBRVM0TWlBUnVnS25oWlVzX3Y4TlB1Q09RVzdlSUVxVjBOelNQRFROQ1VBWjFhbW9nd0JXdlhJYVJTaGpCZFVKSDBXaA?oc=5",
-          "note": "MS新药试验安全性事件",
+          "note": "MS 新药早期试验安全性事件",
           "source": "Moomoo"
+        },
+        {
+          "title": "阿仑珠单抗治疗复发缓解型多发性硬化症的长期结局：一项聚焦那他珠单抗后治疗序贯的真实世界队列研究",
+          "url": "https://is.gd/4aWrz7",
+          "note": "MS 序贯治疗真实世界研究结果",
+          "source": "生物通"
         },
         {
           "title": "票房｜周票房再度不足2亿元 国内首部AI电影观影人次4万(含视频)",
           "url": "https://is.gd/0T1oPd",
-          "note": "周票房与AI电影表现",
+          "note": "周票房低迷，AI 电影受关注",
           "source": "财新"
         },
         {
           "title": "抢救记录缺签字、死亡病历讨论记录无签名 毕节市中医医院被罚1.5万元",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE50NVZJdzRQOXEyNE5ZenJhdnBpMVozdlIzWHdCRTk0LVY3TUVTX1Z6UDJTcHRDbDhWc3BOVzVRa2ppd05hUHZQMzduRmdHNFZ2NmVj?oc=5",
-          "note": "病历书写违规被处罚",
+          "note": "病历书写违规被处罚，事实清楚",
           "source": "信网"
         },
         {
-          "title": "桂东县：社保政策赶大集 服务暖心进乡镇",
-          "url": "https://is.gd/LSVsnL",
-          "note": "社保服务下沉乡镇",
-          "source": "新湖南"
+          "title": "“社保卡金卡”能提待遇？假的",
+          "url": "https://is.gd/wik6UV",
+          "note": "社保待遇谣言辟谣，避免误信",
+          "source": "新浪财经"
         },
         {
-          "title": "“我已经爱上武汉了”——全球时尚掌门人集体表白",
-          "url": "https://is.gd/sRHIzE",
-          "note": "时尚品牌与城市消费动向",
-          "source": "武汉市商务局"
+          "title": "澳门服装节2026呈献中西国际时尚风采",
+          "url": "https://is.gd/ELSLFZ",
+          "note": "澳门服装节展示中西时尚设计",
+          "source": "中央政府驻澳门联络办公室"
         },
         {
           "title": "闺蜜第一次出国去哪里？3个免签入门地实测对比+FAQ",
           "url": "https://is.gd/ocxJew",
-          "note": "免签目的地实用对比",
+          "note": "免签目的地实测，出行可参考",
           "source": "手机新浪网"
         }
       ]
@@ -119,28 +119,28 @@
       "title": "海外要闻",
       "items": [
         {
-          "title": "伊朗称在霍尔木兹海峡上空击落美军无人机",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE94bjJoSmNGUUJaeEpxVHNXUnpFcUhlLUNXOGNyZHBkSFhYTFNTU1dab0M2LU93Q3RiTUxkNTBJcVU0Q1c1THN1LWVzMi1WVDB5d0VHbGxpUnZUVWdVazU1bWhPanNZTHlxWnNCSmlOUlQ3RzdZUm1HX3RtbTZlMmc?oc=5",
-          "note": "海湾局势再度紧张",
+          "title": "以色列议会选举计票结束 内塔尼亚胡阵营议席未过半",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tcVFUOFZaQktaNHhPdTQtQm9XSHdkNXJldGk3dVhncGZMZmp5MzRjb0tNdjVrWmIzTDd0MGF3b2l3bkJ6UU05OUVubTR2NmNhYmxkYVhOQ0VfMTBNVEFvQ2toN1plS2x5V0pSRkRsb0tSNWEyYlJjal9ENEVGY2s?oc=5",
+          "note": "以色列选后组阁格局生变",
           "source": "新华网"
         },
         {
-          "title": "以色列议会选举初步计票：两大阵营均未获多数席位",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5hMzlYZmZUOE83RlkzODlFcFdnVUo0aWFxSE4wWEdYZ2NEX3pGdVJwdzNldFdoc2VuVlFoTFNGbVQxTjZaUTExR2NYUXgyYnRVTmNtRExYMUVNdVhqVVZF?oc=5",
-          "note": "以色列政局走向未定",
-          "source": "人民政协网"
+          "title": "西班牙乌尔达高铁相撞事故致69死 初步调查指向信号故障与调度失误",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE84Q0xsVzh1UjlRd1I3bnltbEcwMHJxUzU2WWgzWDEyNXFEZTVOYTdndlBqU3FnNkZQY1FmTHo3bkU1R2JSdnBtWTNPRHI5bjRBeVE?oc=5",
+          "note": "高铁相撞初查指向信号与调度",
+          "source": "凤凰网"
         },
         {
-          "title": "普京称赞马斯克是天才 称俄正打造对标“星链”的卫星系统",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9HZXZ5Qjg5WmZqQjFMOWFla2JZb1NvTzBXU0xGOFZjMGIxNW9ac19STnlXTWh5ajFrUXQ5ZHk3S3FteWdVYkYwUmYyR2ZHODdxd1BQS0JrZ2tSb0t5ZFVJWHY2V3NVS3Na?oc=5",
-          "note": "俄推进卫星互联网计划",
+          "title": "美国俄勒冈州两架直升机相撞 3人死亡",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGaXJZOXYyanlUaXVNc2pTRmh2RzlROEZmZkFYSlgzcUVfYVhOZ1lBdU43b290Nks3Z3JwbWtRY3gyNjd2RzhfWU5uZTFQcmcxSmhOYVI2cjVoOXQ2LVRpdENyZEl1SDFTN1NKYTBkWUtic1VSWndIYjNBcm9BaDg?oc=5",
+          "note": "俄勒冈直升机相撞致三人死亡",
+          "source": "新华网"
+        },
+        {
+          "title": "美媒曝：特朗普施压下，乌克兰已暂停袭击俄罗斯炼油厂",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9lczJCQV8tWktlRjg1MjN4YXpiVllOWG9fLVJmeERaN2N2N0RoWHI0ZElkZ0pfaWVZREcxWHpGaVNzSTFISE96akFPMjJRU3ZCVS1iNy1UYnpfNzhpUUJ2WFllaDVIODZY?oc=5",
+          "note": "乌方暂停袭击俄炼油厂报道",
           "source": "中国新闻网"
-        },
-        {
-          "title": "三段录音还原西班牙列车相撞惨剧 首相称“将调查到底”",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1zeEZXN1BfMXVhMGZIM1FqbnVFcDRDRnNmSVg1Y1dFQ3NMM2tkZGVQYnFfMHBjQ2d3WXFIQ3daUVVQX1BzMkxpOWRpczhOWHVMX2s3d2ZQODI4ZGdpZUJB?oc=5",
-          "note": "西班牙铁路事故追责",
-          "source": "华商网"
         }
       ]
     },
@@ -150,39 +150,39 @@
       "title": "微博热搜",
       "items": [
         {
-          "title": "超十万人报名华为乾崑智驾公开赛",
-          "url": "https://s.weibo.com/weibo?q=%E8%B6%85%E5%8D%81%E4%B8%87%E4%BA%BA%E6%8A%A5%E5%90%8D%E5%8D%8E%E4%B8%BA%E4%B9%BE%E5%B4%91%E6%99%BA%E9%A9%BE%E5%85%AC%E5%BC%80%E8%B5%9B",
-          "note": "智驾赛事热度反映用户关注",
+          "title": "4名缅甸工人杀中国老板后自首",
+          "url": "https://s.weibo.com/weibo?q=4%E5%90%8D%E7%BC%85%E7%94%B8%E5%B7%A5%E4%BA%BA%E6%9D%80%E4%B8%AD%E5%9B%BD%E8%80%81%E6%9D%BF%E5%90%8E%E8%87%AA%E9%A6%96",
+          "note": "涉外刑案引发关注",
           "source": ""
         },
         {
-          "title": "不会打方结女博士曾在各个科室轮转",
-          "url": "https://s.weibo.com/weibo?q=%E4%B8%8D%E4%BC%9A%E6%89%93%E6%96%B9%E7%BB%93%E5%A5%B3%E5%8D%9A%E5%A3%AB%E6%9B%BE%E5%9C%A8%E5%90%84%E4%B8%AA%E7%A7%91%E5%AE%A4%E8%BD%AE%E8%BD%AC",
-          "note": "医疗人才培养争议持续",
+          "title": "长沙民政职业技术学院通报",
+          "url": "https://s.weibo.com/weibo?q=%E9%95%BF%E6%B2%99%E6%B0%91%E6%94%BF%E8%81%8C%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2%E9%80%9A%E6%8A%A5",
+          "note": "校方通报回应舆情",
           "source": ""
         },
         {
-          "title": "我国农产品全面提质路线图来了",
-          "url": "https://s.weibo.com/weibo?q=%E6%88%91%E5%9B%BD%E5%86%9C%E4%BA%A7%E5%93%81%E5%85%A8%E9%9D%A2%E6%8F%90%E8%B4%A8%E8%B7%AF%E7%BA%BF%E5%9B%BE%E6%9D%A5%E4%BA%86",
-          "note": "农产品质量政策发布",
+          "title": "王楚钦替孙颖莎把让分谈高了",
+          "url": "https://s.weibo.com/weibo?q=%E7%8E%8B%E6%A5%9A%E9%92%A6%E6%9B%BF%E5%AD%99%E9%A2%96%E8%8E%8E%E6%8A%8A%E8%AE%A9%E5%88%86%E8%B0%88%E9%AB%98%E4%BA%86",
+          "note": "乒乓球让分话题引热议",
           "source": ""
         },
         {
-          "title": "三丽鸥致歉",
-          "url": "https://s.weibo.com/weibo?q=%E4%B8%89%E4%B8%BD%E9%B8%A5%E8%87%B4%E6%AD%89",
-          "note": "品牌联名争议回应",
+          "title": "Viper听到错误信息原因",
+          "url": "https://s.weibo.com/weibo?q=Viper%E5%90%AC%E5%88%B0%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF%E5%8E%9F%E5%9B%A0",
+          "note": "电竞选手沟通问题受关注",
           "source": ""
         },
         {
-          "title": "长期吃西地那非的人嘴太严了",
-          "url": "https://s.weibo.com/weibo?q=%E9%95%BF%E6%9C%9F%E5%90%83%E8%A5%BF%E5%9C%B0%E9%82%A3%E9%9D%9E%E7%9A%84%E4%BA%BA%E5%98%B4%E5%A4%AA%E4%B8%A5%E4%BA%86",
-          "note": "用药话题引发讨论",
+          "title": "王一博奥迪e-tron从容应万变",
+          "url": "https://s.weibo.com/weibo?q=%E7%8E%8B%E4%B8%80%E5%8D%9A%E5%A5%A5%E8%BF%AAe-tron%E4%BB%8E%E5%AE%B9%E5%BA%94%E4%B8%87%E5%8F%98",
+          "note": "品牌代言话题，信息量有限",
           "source": ""
         },
         {
-          "title": "中学小卖部只卖牛奶和水家长发声",
-          "url": "https://s.weibo.com/weibo?q=%E4%B8%AD%E5%AD%A6%E5%B0%8F%E5%8D%96%E9%83%A8%E5%8F%AA%E5%8D%96%E7%89%9B%E5%A5%B6%E5%92%8C%E6%B0%B4%E5%AE%B6%E9%95%BF%E5%8F%91%E5%A3%B0",
-          "note": "校园食品管理争议",
+          "title": "嫁金钗封神台词",
+          "url": "https://s.weibo.com/weibo?q=%E5%AB%81%E9%87%91%E9%92%97%E5%B0%81%E7%A5%9E%E5%8F%B0%E8%AF%8D",
+          "note": "剧集台词讨论热度高",
           "source": ""
         }
       ]
@@ -193,39 +193,39 @@
       "title": "X 全球趋势",
       "items": [
         {
-          "title": "Mustafa Kemal Atatürk",
-          "url": "https://getdaytrends.com/trend/Mustafa%20Kemal%20Atat%C3%BCrk/",
-          "note": "土耳其纪念日相关趋势",
+          "title": "Binance",
+          "url": "https://getdaytrends.com/trend/Binance/",
+          "note": "加密交易平台再成全球热词",
           "source": ""
         },
         {
-          "title": "#29Ekim",
-          "url": "https://getdaytrends.com/trend/%2329Ekim/",
-          "note": "土耳其共和国日话题",
+          "title": "#DuaBangsaSatuCita",
+          "url": "https://getdaytrends.com/trend/%23DuaBangsaSatuCita/",
+          "note": "印尼政治话题标签走热",
           "source": ""
         },
         {
-          "title": "#モンハンアウトランダーズ",
-          "url": "https://getdaytrends.com/trend/%23%E3%83%A2%E3%83%B3%E3%83%8F%E3%83%B3%E3%82%A2%E3%82%A6%E3%83%88%E3%83%A9%E3%83%B3%E3%83%80%E3%83%BC%E3%82%BA/",
-          "note": "日本游戏新作讨论",
+          "title": "#BütçedeKademeŞart",
+          "url": "https://getdaytrends.com/trend/%23B%C3%BCt%C3%A7edeKademe%C5%9Eart/",
+          "note": "土耳其预算分级诉求受关注",
           "source": ""
         },
         {
-          "title": "#たまごっち診断",
-          "url": "https://getdaytrends.com/trend/%23%E3%81%9F%E3%81%BE%E3%81%94%E3%81%A3%E3%81%A1%E8%A8%BA%E6%96%AD/",
-          "note": "日本互动话题走热",
+          "title": "#دین_فروش_سیاستدان",
+          "url": "https://getdaytrends.com/trend/%23%D8%AF%DB%8C%D9%86_%D9%81%D8%B1%D9%88%D8%B4_%D8%B3%DB%8C%D8%A7%D8%B3%D8%AA%D8%AF%D8%A7%D9%86/",
+          "note": "伊朗政治批评标签升温",
           "source": ""
         },
         {
-          "title": "MAGIC LOVER Q6",
-          "url": "https://getdaytrends.com/trend/MAGIC%20LOVER%20Q6/",
-          "note": "娱乐话题上榜",
+          "title": "シンエンペラー",
+          "url": "https://getdaytrends.com/trend/%E3%82%B7%E3%83%B3%E3%82%A8%E3%83%B3%E3%83%9A%E3%83%A9%E3%83%BC/",
+          "note": "日本赛马相关话题登榜",
           "source": ""
         },
         {
-          "title": "#sonsuzadek",
-          "url": "https://getdaytrends.com/trend/%23sonsuzadek/",
-          "note": "土耳其语话题趋势",
+          "title": "Hayırlı Cumalar",
+          "url": "https://getdaytrends.com/trend/Hay%C4%B1rl%C4%B1%20Cumalar/",
+          "note": "土耳其周五问候语例行登榜",
           "source": ""
         }
       ]
@@ -236,33 +236,33 @@
       "title": "GitHub Trending",
       "items": [
         {
-          "title": "HKUDS/DeepTutor — DeepTutor: Lifelong Personalized Tutoring.…（2,371 stars today）",
-          "url": "https://github.com/HKUDS/DeepTutor",
-          "note": "个性化教学智能体项目",
-          "source": ""
-        },
-        {
-          "title": "elayadesign/ai-design-skills（2,139 stars today）",
-          "url": "https://github.com/elayadesign/ai-design-skills",
-          "note": "AI设计技能库热度高",
-          "source": ""
-        },
-        {
-          "title": "Nutlope/hallmark — Anti-AI-slop design skill for Claude Code,…（2,110 stars toda…",
-          "url": "https://github.com/Nutlope/hallmark",
-          "note": "面向编码代理的设计技能",
-          "source": ""
-        },
-        {
-          "title": "pbakaus/impeccable — The design vocabulary for your coding agent…（1,472 stars t…",
+          "title": "pbakaus/impeccable — The design vocabulary for your coding agent…（2,870 stars t…",
           "url": "https://github.com/pbakaus/impeccable",
-          "note": "编码代理设计词汇工具",
+          "note": "为编码智能体提供设计词汇",
           "source": ""
         },
         {
-          "title": "obra/superpowers — An agentic skills framework & software deve…（1,095 stars tod…",
-          "url": "https://github.com/obra/superpowers",
-          "note": "智能体技能框架",
+          "title": "HKUDS/DeepTutor — DeepTutor: Lifelong Personalized Tutoring.…（1,930 stars today）",
+          "url": "https://github.com/HKUDS/DeepTutor",
+          "note": "港大团队终身个性化辅导项目",
+          "source": ""
+        },
+        {
+          "title": "milind-soni/OpenMausBot — Open-source Grok Bot alternative with a vir…（1,199 st…",
+          "url": "https://github.com/milind-soni/OpenMausBot",
+          "note": "开源 Grok Bot 替代实现",
+          "source": ""
+        },
+        {
+          "title": "elayadesign/ai-design-skills（1,187 stars today）",
+          "url": "https://github.com/elayadesign/ai-design-skills",
+          "note": "AI 设计技能集合热度上升",
+          "source": ""
+        },
+        {
+          "title": "JetBrains/thinkrail — Vibe code with pi in a lightweight, real ID…（1,117 stars…",
+          "url": "https://github.com/JetBrains/thinkrail",
+          "note": "JetBrains 轻量智能编码环境",
           "source": ""
         }
       ]
@@ -275,19 +275,19 @@
         {
           "title": "Meta Partners With Five US Universities to Accelerate Medical and Scientific Br…",
           "url": "https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs/",
-          "note": "Meta与高校合作医学研究",
+          "note": "Meta 与五所高校合作医疗科研",
           "source": ""
         },
         {
           "title": "Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built f…",
           "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
-          "note": "个人AI代理落地新加坡",
+          "note": "个人 AI 智能体在新加坡上线",
           "source": ""
         },
         {
-          "title": "More Than Three Quarters of Small Business Owners Say AI Makes Them More Produc…",
-          "url": "https://about.fb.com/news/2026/10/more-than-three-quarters-of-small-business-owners-say-ai-makes-them-more-productive-but-most-need-more-guidance/",
-          "note": "小企业AI使用调查",
+          "title": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are…",
+          "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision/",
+          "note": "Meta 与 CNIB 合作支持视障群体",
           "source": ""
         }
       ]
@@ -298,33 +298,33 @@
       "title": "中文热榜",
       "items": [
         {
-          "title": "如何理解梁文锋「在颠覆性的技术面前，闭源形成的护城河是短暂的」这一判断？",
-          "url": "https://www.zhihu.com/question/2098733383778149122",
-          "note": "开源与闭源护城河讨论",
+          "title": "如何看待中科大给学生提供每天一亿的 token 额度？",
+          "url": "https://www.zhihu.com/question/2098940094346433079",
+          "note": "高校大规模发放 AI 算力引讨论",
           "source": ""
         },
         {
-          "title": "如何评价亚马逊前华人女工程师疑似按照 ChatGPT 的建议自行减少抗癫痫药物后猝死这一事件？",
-          "url": "https://www.zhihu.com/question/2098895782283841766",
-          "note": "AI建议与用药风险",
+          "title": "如何看待红果短剧跃升为国内第四大app？它瓜分了谁的市场？",
+          "url": "https://www.zhihu.com/question/2099125476149274126",
+          "note": "短剧平台崛起冲击内容格局",
           "source": ""
         },
         {
-          "title": "科普书出现「双头虾」图片，出版社称正在下架召回，为何出现如此明显错误？科普类出版该限制 AI 配图吗？",
-          "url": "https://www.zhihu.com/question/2098771415411291576",
-          "note": "AI配图错误引发召回",
+          "title": "为什么 BBA 不进商场开店？",
+          "url": "https://www.zhihu.com/question/2001260067715044038",
+          "note": "豪华车渠道策略讨论",
           "source": ""
         },
         {
-          "title": "如何看待 2026 年 10 月 28 日，比亚迪员工数突破 102 万人？",
-          "url": "https://www.zhihu.com/question/2098833611659154592",
-          "note": "车企规模与就业讨论",
+          "title": "《影之刃零》中没有任何死亡惩罚，杀死的敌人也不会复活，这对你来说是利还是弊？",
+          "url": "https://www.zhihu.com/question/2099147671151842178",
+          "note": "游戏设计取舍引发玩家讨论",
           "source": ""
         },
         {
-          "title": "媒体曝撒尿牛肉味丸原料多为鸡脖泥，牛肉味纯靠牛肉膏，这类速冻肉丸存在哪些食品安全隐患？这算违法吗？",
-          "url": "https://www.zhihu.com/question/2098700998789304471",
-          "note": "速冻肉丸食品安全质疑",
+          "title": "Viper 直指 BLG 队内沟通已到不如不沟通水平，队伍沟通为何会出现如此严重的问题？",
+          "url": "https://www.zhihu.com/question/2099458637663925010",
+          "note": "电竞团队沟通问题被剖析",
           "source": ""
         }
       ]
