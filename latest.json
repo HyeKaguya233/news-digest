@@ -1,77 +1,188 @@
 {
   "schema": 1,
   "kind": "daily",
-  "date": "2026-11-03",
-  "generated_at": "2026-11-03T17:45:50+08:00",
-  "title": "每日简报 11-03",
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T17:31:46+08:00",
+  "title": "每日简报 11-04",
   "heading": "每日简报",
-  "briefing": "",
-  "highlights": [],
-  "count": 39,
+  "briefing": "今日最值得关注的是美国2026年中期选举：民主党夺回参众两院，特朗普承认失利，这将影响后续政策走向。科技方面，丰田与Waymo深化自动驾驶合作，DJI预告11月5日发布折叠热成像无人机，均与影像和自动驾驶从业者直接相关。GitHub上AI智能体工具与推理引擎热度高，值得工程师留意。医疗领域，多发性硬化残疾进展的识别评估路径有临床进展，另有长护险落地等社保政策变化。影视后期方面，Blackmagic新机参与影片拍摄、苏州经典修复展持续，可供参考。",
+  "highlights": [
+    "美中期选举民主党夺回两院，特朗普承认失利",
+    "丰田与Waymo深化自动驾驶合作",
+    "DJI预告11月5日发布折叠热成像无人机",
+    "多发性硬化残疾进展评估路径更新",
+    "辽源长护险落地，2027年集中缴费"
+  ],
+  "count": 43,
   "sections": [
+    {
+      "key": "recommend",
+      "icon": "🎯",
+      "title": "你的推荐",
+      "items": [
+        {
+          "title": "Toyota and Waymo Advance Autonomous Driving Collaboration for Safer Streets and…",
+          "url": "https://is.gd/uv2BJq",
+          "note": "丰田与Waymo深化自动驾驶合作",
+          "source": "global.toyota"
+        },
+        {
+          "title": "DJI Teases a Folding Thermal Drone for November 5 With the 5TD Gimbal",
+          "url": "https://is.gd/wytdOC",
+          "note": "DJI预热折叠热成像无人机新品",
+          "source": "DroneXL"
+        },
+        {
+          "title": "South Korean court rejects Tesla owners' lawsuit seeking 'Full Self-Driving' re…",
+          "url": "https://is.gd/QnTEnO",
+          "note": "韩法院驳回特斯拉FSD相关诉讼",
+          "source": "Reuters"
+        },
+        {
+          "title": "‘Knives Out’ director launches iPhone camera app that shoots like his movies -…",
+          "url": "https://is.gd/2Hv5fA",
+          "note": "导演推出电影风格iPhone拍摄应用",
+          "source": "9to5Mac"
+        },
+        {
+          "title": "Assembler AI Closes $4 Million Seed Round for Manufacturing Computer Vision",
+          "url": "https://is.gd/9WtGGj",
+          "note": "制造视觉公司完成400万美元融资",
+          "source": "Yahoo Finance"
+        },
+        {
+          "title": "Your iPhone 18 Pro Photos May Look Worse In Pro Mode – Here's Why",
+          "url": "https://is.gd/S2HggM",
+          "note": "iPhone 18 Pro专业模式成像解析",
+          "source": "BGR"
+        }
+      ]
+    },
+    {
+      "key": "recommend_partner",
+      "icon": "✨",
+      "title": "TA 的推荐",
+      "items": [
+        {
+          "title": "揭示多发性硬化中独立于复发活动的残疾进展：面向临床实践的分步识别与多维评估路径",
+          "url": "https://is.gd/vMfqO6",
+          "note": "MS残疾进展识别评估路径更新",
+          "source": "生物通"
+        },
+        {
+          "title": "辽源社保“第六险”落地 2027年医保、长护险集中缴费开启",
+          "url": "https://is.gd/2bfRA6",
+          "note": "辽源长护险落地及缴费安排",
+          "source": "新华网"
+        },
+        {
+          "title": "82部修复经典亮相苏州，国际修复电影展持续至11月8日",
+          "url": "https://is.gd/Lb5UEL",
+          "note": "苏州国际修复电影展持续至11月8日",
+          "source": "京报网"
+        },
+        {
+          "title": "Blackmagic URSA Cine Immersive 助力影片《Desert Palms》的拍摄",
+          "url": "https://is.gd/BYJ0rH",
+          "note": "URSA Cine Immersive参与影片…",
+          "source": "Blackmagic Design"
+        },
+        {
+          "title": "Blackmagic Design 助力陶森大学媒体制作项目",
+          "url": "https://is.gd/B1XpqT",
+          "note": "Blackmagic支持高校媒体制作教学",
+          "source": "Blackmagic Design"
+        },
+        {
+          "title": "周星驰新片《功夫女足》热度领跑！超100部电影集结 暑期档仍缺大片压阵",
+          "url": "https://is.gd/Sl29ue",
+          "note": "暑期档超百部影片集结待映",
+          "source": "财联社"
+        },
+        {
+          "title": "燃爆虎门！8大原创品牌集结，富民时装节强势出圈",
+          "url": "https://is.gd/QEMLqw",
+          "note": "虎门富民时装节集结原创品牌",
+          "source": "21财经"
+        },
+        {
+          "title": "我省首条邮轮“无目的地海上游”航线启动 解锁海上度假新体验",
+          "url": "https://is.gd/HkGb9Z",
+          "note": "首条无目的地邮轮航线启动",
+          "source": "东南网"
+        }
+      ]
+    },
+    {
+      "key": "world",
+      "icon": "🌍",
+      "title": "海外要闻",
+      "items": [
+        {
+          "title": "美国2026期中选举：民主党“蓝色浪潮”横扫参、众两院",
+          "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNVG52VmF3OVdqNTRub0txa0tWQWstTlVTX1dXZVV1Z0xlLXZrb1hrV3l3UllpQUUxTzJDc3h4MVFCXzhhUl8yaFNZMWhNV21aRGkyX19tMjAwbGdhYVFLb1A0VTdMa3ZfTkYzSjVhM3ZjOHhVYXJFTVEyVVJ1a0diTTVoUnZiRkdUTU9IbGE4ZzVzeHk5Zm93Q0EwcFpZSkt2YjVQc2wxVHdQWGZvaTJmX3hGV3Z1RFFQbmN3cjk3dnR3R094NEUweTVKMmg1VWNjNjVzWXRSWGRzdG4wT2Z2ZjJMM3dsMXYtRUd3cFZEU25MNEV6TzJjZG8tUXZTQm9FLWdzX3lIZHBvQS1kTTI3N2JNbXBfQTR1UTJnUFJnNjdvbERGWC1TS25YUEstU1BsLU1MOEJR?oc=5",
+          "note": "民主党横扫参众两院",
+          "source": "DW.com"
+        },
+        {
+          "title": "美总统特朗普承认民主党在中期选举中取得优势",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQck9DcUZMUXo1aWtSYXJ5bXp6MHFCRXB0SFZoT2JoX3d4ZExsb3poWWFJd0FMUEtkVy1lXzRfaWk5X3k0X09JUjMzRF9Idm95dzhIUkhGOE0xSkJmSmh5OGtCanl6RDQ3QXZRbjJ5anBKV1czUmJSZmlPUGFPY2JtbEhIbm94ekR1YmlNQw?oc=5",
+          "note": "特朗普承认选举失利",
+          "source": "21财经"
+        },
+        {
+          "title": "外媒曝美伊做出让步！范围包括核问题及被冻结资产方面 海湾国家认可进展",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9UcGt6Mnd2bGdMa2hmTkFSWW5CcUdjYU1KZFdnMTI1cEV5MUt3ZmNRZW1yMDl1MTVqX3dhbV9oMkxOUDl6NlVjZUU1YnRWa0ZKbHpOcU56Rm0wX0JGazMtZGI2Ym5yTzZwV1NSQnJObDU?oc=5",
+          "note": "美伊核问题与资产让步传闻",
+          "source": "中华军事"
+        },
+        {
+          "title": "欧洲多架客机收到炸弹威胁 安检未发现爆炸物",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FSGdzd0NobzlfaFZ3WFFROW9RUzJOS1FwM2F6Z2c3REdzdUd6WGRmaUhCaWFZc3JZc09FeTNjRS1qSWotekxhNlVldWFHVGRJdkJnb05lWjNJOTV0aE9HdFBNS0hKUk8y?oc=5",
+          "note": "欧洲多架客机遭炸弹威胁",
+          "source": "中国新闻网"
+        }
+      ]
+    },
     {
       "key": "weibo",
       "icon": "🔥",
       "title": "微博热搜",
       "items": [
         {
-          "title": "魏娆知道红线怀了刘朔孩子的反应",
-          "url": "https://is.gd/1oUTD4",
-          "note": "",
+          "title": "A股暴力反弹原因",
+          "url": "https://s.weibo.com/weibo?q=A%E8%82%A1%E6%9A%B4%E5%8A%9B%E5%8F%8D%E5%BC%B9%E5%8E%9F%E5%9B%A0",
+          "note": "A股大幅反弹引发讨论",
           "source": ""
         },
         {
-          "title": "我后悔介绍朋友做大体老师",
-          "url": "https://is.gd/l0fxLu",
-          "note": "",
+          "title": "国会大变天特朗普剩余任期怎么办",
+          "url": "https://s.weibo.com/weibo?q=%E5%9B%BD%E4%BC%9A%E5%A4%A7%E5%8F%98%E5%A4%A9%E7%89%B9%E6%9C%97%E6%99%AE%E5%89%A9%E4%BD%99%E4%BB%BB%E6%9C%9F%E6%80%8E%E4%B9%88%E5%8A%9E",
+          "note": "热议特朗普剩余任期走向",
           "source": ""
         },
         {
-          "title": "本届乌镇峰会分论坛数量创新高",
-          "url": "https://is.gd/37TytW",
-          "note": "",
+          "title": "小鹏MONA L05火热提车",
+          "url": "https://s.weibo.com/weibo?q=%E5%B0%8F%E9%B9%8FMONA+L05%E7%81%AB%E7%83%AD%E6%8F%90%E8%BD%A6",
+          "note": "小鹏MONA L05集中交付",
           "source": ""
         },
         {
-          "title": "警方通报九寨沟景区游客冲突事件",
-          "url": "https://is.gd/LEaGUc",
-          "note": "",
+          "title": "亚洲大学排名揭晓",
+          "url": "https://s.weibo.com/weibo?q=%E4%BA%9A%E6%B4%B2%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%E6%8F%AD%E6%99%93",
+          "note": "亚洲大学最新排名公布",
           "source": ""
         },
         {
-          "title": "是我告的密厉娜",
-          "url": "https://is.gd/9y3TpG",
-          "note": "",
+          "title": "保护企业网络名誉权的指南来了",
+          "url": "https://s.weibo.com/weibo?q=%E4%BF%9D%E6%8A%A4%E4%BC%81%E4%B8%9A%E7%BD%91%E7%BB%9C%E5%90%8D%E8%AA%89%E6%9D%83%E7%9A%84%E6%8C%87%E5%8D%97%E6%9D%A5%E4%BA%86",
+          "note": "企业网络名誉权保护指南发布",
           "source": ""
         },
         {
-          "title": "女作家称AI写书赚百万美元",
-          "url": "https://is.gd/v1P1jI",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "女子回应用猕猴桃腌牛肉碎成肉渣",
-          "url": "https://is.gd/RlLDUQ",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "九寨沟打人事件双方已和解",
-          "url": "https://is.gd/S31GCg",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "A股集体回调原因找到了",
-          "url": "https://is.gd/rCFgqV",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "嫁金钗大结局",
-          "url": "https://s.weibo.com/weibo?q=%E5%AB%81%E9%87%91%E9%92%97%E5%A4%A7%E7%BB%93%E5%B1%80",
-          "note": "",
+          "title": "小伙200多万买14套房年收租21万",
+          "url": "https://s.weibo.com/weibo?q=%E5%B0%8F%E4%BC%99200%E5%A4%9A%E4%B8%87%E4%B9%B014%E5%A5%97%E6%88%BF%E5%B9%B4%E6%94%B6%E7%A7%9F21%E4%B8%87",
+          "note": "购房收租话题引发热议",
           "source": ""
         }
       ]
@@ -82,57 +193,39 @@
       "title": "X 全球趋势",
       "items": [
         {
-          "title": "#GMMTVNEXT",
-          "url": "https://getdaytrends.com/trend/%23GMMTVNEXT/",
-          "note": "",
+          "title": "#Midterms2026",
+          "url": "https://getdaytrends.com/trend/%23Midterms2026/",
+          "note": "中期选举话题持续升温",
           "source": ""
         },
         {
-          "title": "アウトレンジ",
-          "url": "https://getdaytrends.com/trend/%E3%82%A2%E3%82%A6%E3%83%88%E3%83%AC%E3%83%B3%E3%82%B8/",
-          "note": "",
+          "title": "Trump",
+          "url": "https://getdaytrends.com/trend/Trump/",
+          "note": "特朗普相关讨论居前",
           "source": ""
         },
         {
-          "title": "#njpst",
-          "url": "https://getdaytrends.com/trend/%23njpst/",
-          "note": "",
+          "title": "Democrats",
+          "url": "https://getdaytrends.com/trend/Democrats/",
+          "note": "民主党胜选引发关注",
           "source": ""
         },
         {
-          "title": "#ゴジラマイナスゼロ",
-          "url": "https://is.gd/RDeDyv",
-          "note": "",
+          "title": "Republicans",
+          "url": "https://getdaytrends.com/trend/Republicans/",
+          "note": "共和党选情受热议",
           "source": ""
         },
         {
-          "title": "PERTHSANTA DOMIIA BLAST OFF",
-          "url": "https://getdaytrends.com/trend/PERTHSANTA%20DOMIIA%20BLAST%20OFF/",
-          "note": "",
+          "title": "Texas",
+          "url": "https://getdaytrends.com/trend/Texas/",
+          "note": "得州选情翻蓝受关注",
           "source": ""
         },
         {
-          "title": "#PPxPAPERCLIP",
-          "url": "https://getdaytrends.com/trend/%23PPxPAPERCLIP/",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "#映画お姉ちゃんの翠くん",
-          "url": "https://is.gd/wxcjou",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "JBCクラシック",
-          "url": "https://getdaytrends.com/trend/JBC%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF/",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "WILLIAMEST NEXT STEP",
-          "url": "https://getdaytrends.com/trend/WILLIAMEST%20NEXT%20STEP/",
-          "note": "",
+          "title": "America",
+          "url": "https://getdaytrends.com/trend/America/",
+          "note": "美国政治话题整体走高",
           "source": ""
         }
       ]
@@ -143,51 +236,33 @@
       "title": "GitHub Trending",
       "items": [
         {
-          "title": "vercel-labs/agent-desktop — Computer use CLI for AI agents（2,275 stars today）",
+          "title": "vercel-labs/agent-desktop — Computer use CLI for AI agents（3,791 stars today）",
           "url": "https://github.com/vercel-labs/agent-desktop",
-          "note": "",
+          "note": "AI智能体桌面操作CLI工具",
           "source": ""
         },
         {
-          "title": "thedotmack/claude-mem — Persistent Context Across Sessions for Ever…（1,803 star…",
+          "title": "thedotmack/claude-mem — Persistent Context Across Sessions for Ever…（1,139 star…",
           "url": "https://github.com/thedotmack/claude-mem",
-          "note": "",
+          "note": "跨会话持久上下文方案",
           "source": ""
         },
         {
-          "title": "D4Vinci/Scrapling — 🕷️ The BEST Web Scraping framework that han…（706 stars toda…",
-          "url": "https://github.com/D4Vinci/Scrapling",
-          "note": "",
+          "title": "JustVugg/colibri — A hierarchical inference engine for frontie…（802 stars today）",
+          "url": "https://github.com/JustVugg/colibri",
+          "note": "面向前沿模型的分层推理引擎",
           "source": ""
         },
         {
-          "title": "hyprwm/Hyprland — Hyprland is an independent, highly customiz…（509 stars today）",
-          "url": "https://github.com/hyprwm/Hyprland",
-          "note": "",
+          "title": "p-e-w/heretic — Training-free language model modification:…（701 stars today）",
+          "url": "https://github.com/p-e-w/heretic",
+          "note": "免训练语言模型修改工具",
           "source": ""
         },
         {
-          "title": "Donchitos/Claude-Code-Game-Studios — Turn Claude Code into a full game dev stud…",
-          "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "FlashML-org/FreeToken — FreeToken brings datacenter-scale model ser…（653 stars…",
-          "url": "https://github.com/FlashML-org/FreeToken",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "pingdotgg/t3code（3,229 stars today）",
-          "url": "https://github.com/pingdotgg/t3code",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "shiyu-coder/Kronos — Kronos: A Foundation Model for the Language…（857 stars tod…",
-          "url": "https://github.com/shiyu-coder/Kronos",
-          "note": "",
+          "title": "floci-io/floci — Light, fluffy, and always free - The AWS Lo…（482 stars today）",
+          "url": "https://github.com/floci-io/floci",
+          "note": "本地AWS模拟环境工具",
           "source": ""
         }
       ]
@@ -198,27 +273,21 @@
       "title": "Facebook / Meta 动态",
       "items": [
         {
-          "title": "L’avenir appartient à tous: Meta et INCA s’associent pour soutenir les personne…",
-          "url": "https://is.gd/FhWybM",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are…",
-          "url": "https://is.gd/zET6Rt",
-          "note": "",
-          "source": ""
-        },
-        {
           "title": "Meta Partners With Five US Universities to Accelerate Medical and Scientific Br…",
-          "url": "https://is.gd/yf99GC",
-          "note": "",
+          "url": "https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs/",
+          "note": "Meta与五所高校合作医学研究",
           "source": ""
         },
         {
           "title": "Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built f…",
-          "url": "https://is.gd/BKTmBK",
-          "note": "",
+          "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+          "note": "个人AI智能体Muse登陆新加坡",
+          "source": ""
+        },
+        {
+          "title": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are…",
+          "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision/",
+          "note": "Meta与CNIB合作支持视障群体",
           "source": ""
         }
       ]
@@ -229,59 +298,37 @@
       "title": "中文热榜",
       "items": [
         {
-          "title": "如何看待 10 元快剪正暴打全国的「设计总监」？",
-          "url": "https://www.zhihu.com/question/2099419745036650047",
-          "note": "",
+          "title": "2026 年美国中期选举，美民主党称夺回参议院，特朗普被指全面惨败，如何理解当前的选情？未来要关注什么？",
+          "url": "https://www.zhihu.com/question/2100904648848810346",
+          "note": "知乎热议美中期选举选情",
           "source": ""
         },
         {
-          "title": "网传九寨沟一老人被劝阻不要插队后发生打人争执，警方称双方都有责任，具体情况如何？双方应承担什么责任？",
-          "url": "https://www.zhihu.com/question/2100891189767397452",
-          "note": "",
+          "title": "如何看待宇树机器人因过热退出登泰山大赛，被担架抬下山？人形机器人的发展目前还存在哪些技术瓶颈？",
+          "url": "https://www.zhihu.com/question/2100633417675293561",
+          "note": "宇树机器人过热退赛引讨论",
           "source": ""
         },
         {
-          "title": "「赴港看演唱会触发低保预警」女孩全家低保已被取消，哪些细节值得关注？如何看待这一处理？",
-          "url": "https://www.zhihu.com/question/2100949419457603544",
-          "note": "",
+          "title": "广东发文将全面落实带薪年休假并增强执行刚性，释放了哪些信号？最终会全国推行吗？",
+          "url": "https://www.zhihu.com/question/2100983027241375316",
+          "note": "广东强化带薪年休假执行",
           "source": ""
         },
         {
-          "title": "如何解读 2026 年 10 月汽车销量榜：比亚迪近 49 万稳居第一，小米、小鹏齐破 5 万，鸿蒙智行同比却腰斩？",
-          "url": "https://www.zhihu.com/question/2100349565874476266",
-          "note": "",
+          "title": "苹果手机显示 13 日多地气温低至 -30℃，这是怎么回事？是什么问题导致了这种 bug？",
+          "url": "https://www.zhihu.com/question/2101126085631009295",
+          "note": "苹果天气显示异常引技术讨论",
           "source": ""
         },
         {
-          "title": "保时捷女销冠再夺第一，所属公司却半年亏 2.7 亿，个人业绩拉满、公司疯狂失血，传统豪华车市场怎么了？",
-          "url": "https://www.zhihu.com/question/2100560990764889476",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "如何看待新华社在 11 月 2 日发表的文章《国乒男队怎么了？》中表示「男子乒坛多极格局已成」?",
-          "url": "https://www.zhihu.com/question/2100718638814720770",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "如果当初中国没做电动汽车，而是在发动机上玩命追赶会怎样？",
-          "url": "https://www.zhihu.com/question/2099832629952565725",
-          "note": "",
-          "source": ""
-        },
-        {
-          "title": "红果短剧登顶台湾 App 下载榜首，有人退订 Netflix，背后的原因是什么？",
-          "url": "https://www.zhihu.com/question/2100527984583222149",
-          "note": "",
+          "title": "女子在公司吃早餐摔骨折花 2.5 万元治疗，不予认定工伤，人社部称只有午餐被纳入认定范围，这合理吗？",
+          "url": "https://www.zhihu.com/question/2101045355492263432",
+          "note": "早餐摔伤工伤认定争议",
           "source": ""
         }
       ]
     }
   ],
-  "skipped": [
-    "海外要闻",
-    "你的推荐",
-    "TA 的推荐"
-  ]
+  "skipped": []
 }
