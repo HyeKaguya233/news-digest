@@ -1,19 +1,19 @@
 {
   "schema": 1,
   "kind": "daily",
-  "date": "2026-11-06",
-  "generated_at": "2026-11-06T17:33:57+08:00",
-  "title": "每日简报 11-06",
+  "date": "2026-11-07",
+  "generated_at": "2026-11-07T16:58:28+08:00",
+  "title": "每日简报 11-07",
   "heading": "每日简报",
-  "briefing": "今天值得关注的技术与产业动态包括：BMW 推出城市自动驾驶系统，DJI 发布 Matrice 5T 无人机并更新 Osmo Pocket 4P 固件，NVIDIA 开源本体框架，GitHub 上 AI 代理工具热度上升。医疗方面，多发性硬化症病灶髓鞘完整性与认知结局的关联研究有进展，医保社保方面有灵活就业人员参保的实用解读。影视后期领域，Blackmagic 与高校合作、URSA Cine Immersive 参与影片拍摄，苏州举办修复电影展。海外方面，欧洲多架航班遭炸弹威胁、美国中期选举后续动向值得留意。微博上萝卜快跑引发乘客不满，反映自动驾驶落地体验问题。",
+  "briefing": "今天值得关注：宝马推出城市自动驾驶系统，与奔驰、特斯拉正面竞争；DJI 发布 Matrice 5T，并更新 Osmo Pocket 4P 固件，影像与无人机产品线同步推进；嵌入式计算机视觉的落地方法对工程实践有参考价值。影视方面，苏州国际修复电影展展映 82 部修复经典，达芬奇 21.2 更新适配触控 MacBook Pro。医疗与民生方面，多发性硬化症病灶髓鞘完整性与认知结局的关联研究有明确进展，灵活就业人员养老与医保缴纳的实操信息也值得留意。海外方面，俄美乌三方会谈确定在阿布扎比举行，欧洲多地民用设施遭遇安全威胁。",
   "highlights": [
-    "BMW 推出城市自动驾驶系统，挑战奔驰与特斯拉",
-    "DJI 发布 Matrice 5T，强化热成像与 AI 能力",
-    "多发性硬化症研究揭示病灶髓鞘与认知关联",
-    "欧洲数十架航班遭炸弹威胁，多国战机护航",
-    "萝卜快跑体验问题登上微博热搜"
+    "宝马推城市自动驾驶系统，对标奔驰特斯拉",
+    "DJI 发布 Matrice 5T，强化热成像与机载 AI",
+    "嵌入式计算机视觉落地方法总结",
+    "达芬奇 21.2 发布，适配触控 MacBook Pro",
+    "俄美乌三方会谈定于阿布扎比举行"
   ],
-  "count": 42,
+  "count": 43,
   "sections": [
     {
       "key": "recommend",
@@ -29,32 +29,32 @@
         {
           "title": "DJI Launches Matrice 5T with Advanced Thermal Imaging, AI, and Longer Flight Ti…",
           "url": "https://is.gd/R6B643",
-          "note": "大疆新无人机强化热成像与AI",
+          "note": "DJI 新无人机强化热成像与 AI",
           "source": "Dronelife"
         },
         {
           "title": "DJI Osmo Pocket 4P Firmware V01.02.1149 Released – 18x Zoom, Smoother Lens Swit…",
           "url": "https://is.gd/iBZ1kN",
-          "note": "口袋云台固件更新变焦与切换",
+          "note": "口袋云台固件升级变焦与切换",
           "source": "CineD"
+        },
+        {
+          "title": "How to Make Embedded Computer Vision Work in the Real World",
+          "url": "https://is.gd/Lpdk1F",
+          "note": "嵌入式视觉工程落地经验",
+          "source": "www.embedded.com"
         },
         {
           "title": "Your iPhone 18 Pro Photos May Look Worse In Pro Mode – Here's Why",
           "url": "https://is.gd/S2HggM",
-          "note": "分析iPhone专业模式画质问题",
+          "note": "手机专业模式成像差异解析",
           "source": "BGR"
         },
         {
-          "title": "The Pixel 11 Pro’s 5x zoom portrait mode is mind-blowing, and you have to try i…",
-          "url": "https://is.gd/2iqeJT",
-          "note": "Pixel长焦人像模式效果突出",
-          "source": "Android Authority"
-        },
-        {
-          "title": "LeanTaaS buys LookDeep Health and brings computer vision into hospital patient…",
-          "url": "https://is.gd/hZ4veD",
-          "note": "计算机视觉进入医院患者流程",
-          "source": "MarketScale"
+          "title": "Is Adding a Teleconverter to Non-Flagship Camera Models a True Innovation?",
+          "url": "https://is.gd/zU199M",
+          "note": "非旗舰机型增距镜设计讨论",
+          "source": "36氪"
         }
       ]
     },
@@ -64,22 +64,16 @@
       "title": "TA 的推荐",
       "items": [
         {
-          "title": "多发性硬化症四年认知结局与病灶髓鞘完整性的关联研究",
-          "url": "https://is.gd/TvL3EK",
-          "note": "多发性硬化认知与髓鞘研究",
-          "source": "生物通"
+          "title": "82部修复经典亮相苏州，国际修复电影展持续至11月8日",
+          "url": "https://is.gd/Lb5UEL",
+          "note": "苏州修复影展展映82部经典",
+          "source": "京报网"
         },
         {
-          "title": "外卖小哥、网约车司机、带货主播 怎么交养老保险和医保？",
-          "url": "https://is.gd/7BBAFZ",
-          "note": "灵活就业人员参保实用解读",
-          "source": "hznews.hangzhou.com.cn"
-        },
-        {
-          "title": "Blackmagic Design 助力陶森大学媒体制作项目",
-          "url": "https://is.gd/B1XpqT",
-          "note": "Blackmagic支持高校影视教学",
-          "source": "Blackmagic Design"
+          "title": "达芬奇 DaVinci Resolve 21.2 发布，适配苹果首款触控 MacBook Pro",
+          "url": "https://is.gd/mLTK7X",
+          "note": "达芬奇新版适配触控MacBook",
+          "source": "币界网"
         },
         {
           "title": "Blackmagic URSA Cine Immersive 助力影片《Desert Palms》的拍摄",
@@ -88,22 +82,34 @@
           "source": "Blackmagic Design"
         },
         {
-          "title": "82部修复经典亮相苏州，国际修复电影展持续至11月8日",
-          "url": "https://is.gd/Lb5UEL",
-          "note": "苏州修复电影展映82部经典",
-          "source": "京报网"
+          "title": "多发性硬化症四年认知结局与病灶髓鞘完整性的关联研究",
+          "url": "https://is.gd/TvL3EK",
+          "note": "MS病灶髓鞘与认知关联研究",
+          "source": "生物通"
         },
         {
-          "title": "周星驰新片《功夫女足》热度领跑！超100部电影集结 暑期档仍缺大片压阵",
-          "url": "https://is.gd/Sl29ue",
-          "note": "暑期档新片热度与市场分析",
-          "source": "财联社"
+          "title": "外卖小哥、网约车司机、带货主播 怎么交养老保险和医保？",
+          "url": "https://is.gd/7BBAFZ",
+          "note": "灵活就业者社保缴纳指南",
+          "source": "hznews.hangzhou.com.cn"
         },
         {
           "title": "迪拜推出全球首个城市级旅游目的地会员计划",
           "url": "https://is.gd/R9sXuh",
           "note": "迪拜推城市级旅游会员计划",
           "source": "环球旅讯"
+        },
+        {
+          "title": "2026年度总票房突破317亿元！本周多部新作接力上映",
+          "url": "https://is.gd/IsApaj",
+          "note": "年度票房破317亿新片接力",
+          "source": "新浪财经"
+        },
+        {
+          "title": "燃爆虎门！8大原创品牌集结，富民时装节强势出圈",
+          "url": "https://is.gd/QEMLqw",
+          "note": "虎门时装节集结原创品牌",
+          "source": "21财经"
         }
       ]
     },
@@ -113,27 +119,27 @@
       "title": "海外要闻",
       "items": [
         {
-          "title": "欧洲数十架航班遭炸弹威胁，多国战斗机紧急升空护航，混合战争担忧加剧",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOWFcyNkJQR2oxTEpxRzRVQlVjUl9GNmF0endYVkExOTRCS0hBUDdsNzJic25UNnMzaW9Pb19MQlZoc0docUl2ZHBOU2FnWEhMZjZMbGJrX3hackt6Z2IwYTlLVUt4RWZ4MnRqWnBIT3pyU0djUkRERUxyRndJN1NIMUQ3ZW5QSEd2VjZ5ag?oc=5",
-          "note": "欧洲航班炸弹威胁引安全担忧",
-          "source": "搜狐网"
+          "title": "普京确认俄美乌三方会谈将于11月10日在阿布扎比举行",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBMNjB6WF96dGRkbGNCcWxtY2tjRTFuZGwwWFVyNXRvSDJza3l5TmJHZ3d5V0M3SWQwZ1BxNHFHSFViZUdxN1N4anY1YWd1U2h5X0NXRHFSN2M5RHM?oc=5",
+          "note": "三方会谈定址阿布扎比",
+          "source": "https://www.gzastv.cn/"
         },
         {
-          "title": "美国第一夫人在白宫会晤俄乌代表 吁实现持久和平",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUmdod2Y5T1ZfdndraUliLVgtRTIwTVFrRGlWSW1BV0ZZUEY3WlVuZjhEVnU2Unkza2xVc1lMQnVwM3U1UUx4blI1VE8zWTU3SVRSRFlzRTBCQU0tOWxuM1VZV3pJY2doNWVmLWVhMi1iWVdqY05KemEtOEtRbFJTbjlqRUhIN1FhVzk4RnhFeGVjbFFZ?oc=5",
-          "note": "美第一夫人会晤俄乌代表",
-          "source": "紫荆网"
-        },
-        {
-          "title": "中期选举失利后 特朗普在办公桌上放了一顶帽子(图)",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5Ua2QtTGxUNlJWajZsVlZpTW5jczBiWjEtUmcwRVcwcmd2aFJ4dVRBMDN3X3dtNDZqeElYZ3R1dFR6MlAyRm8xVzN6WFhvNjBuRU9YaTFXNkljNVdQcFgtRWFCRlNIN1lf?oc=5",
-          "note": "特朗普中期选举后动向",
+          "title": "欧洲多地接连遭遇炸弹威胁和网络攻击民用设施安全引发关注-中新网",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4tSEtkaTdpUzFrZkVaSWRPaUh1Q2VtTVp0TFRJSElmcFJNVWVtWVBSeTc2bGx1S001MHRwOUx0djhER093dEUwYkRpQjl0MVExcjBUem5MMFFOMWhTOE5vVUw1Q1Z4RUxK?oc=5",
+          "note": "欧洲民用设施安全威胁上升",
           "source": "中国新闻网"
         },
         {
-          "title": "日本参议员批评高市政权罔顾民意 急于推动修宪扩军",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBta0RjaGxpWmpyT1BVQTduVXRCWm9waE5QSEJTbDNFcldYUGJDWEFFWnBqX3NQZlB6bGNjSTZZbXpiQ0M3SWtOeE5PQV9EQUFxMlZRTVhMQ19aZEdfVjhoT1hwWjBHSlVq?oc=5",
-          "note": "日本议员批评修宪扩军动向",
+          "title": "特朗普称对伊朗实施小型打击，美悬赏征伊核计划情报",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBmWlZCTlVIcFlnLU5YRHpQai1LNzNTVDZ0bXJtSW55TC1qb2hiV3RUeEs2S1F1WWswSXNUZV95NU8ybW5FZnFNdWticHRJTXlHUlo1cmhoaUNFSS1LdkE?oc=5",
+          "note": "美伊紧张局势再度升温",
+          "source": "京报网"
+        },
+        {
+          "title": "日本民众集会抗议政府企图突破“无核三原则”",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBjcUNNN01WWjI5azd0VGU0bFptVjF4ZVdlUlBKNzdQQVdTLTZRNS1FVnhqUUNwX1BzSF9kQlZVbHgzbUJJRUtrMzFpbGRUVmNUSXRMZVQ2U1JPX19qU2t4SFkxYWV3UG1J?oc=5",
+          "note": "日本民众抗议核政策松动",
           "source": "中国新闻网"
         }
       ]
@@ -144,39 +150,39 @@
       "title": "微博热搜",
       "items": [
         {
-          "title": "萝卜快跑逼出乘客路怒症",
-          "url": "https://s.weibo.com/weibo?q=%E8%90%9D%E5%8D%9C%E5%BF%AB%E8%B7%91%E9%80%BC%E5%87%BA%E4%B9%98%E5%AE%A2%E8%B7%AF%E6%80%92%E7%97%87",
-          "note": "自动驾驶出行体验引热议",
+          "title": "官方通报保定桥体脱落事故",
+          "url": "https://s.weibo.com/weibo?q=%E5%AE%98%E6%96%B9%E9%80%9A%E6%8A%A5%E4%BF%9D%E5%AE%9A%E6%A1%A5%E4%BD%93%E8%84%B1%E8%90%BD%E4%BA%8B%E6%95%85",
+          "note": "保定桥体脱落官方通报",
           "source": ""
         },
         {
-          "title": "商南命案嫌犯孙某已死亡",
-          "url": "https://s.weibo.com/weibo?q=%E5%95%86%E5%8D%97%E5%91%BD%E6%A1%88%E5%AB%8C%E7%8A%AF%E5%AD%99%E6%9F%90%E5%B7%B2%E6%AD%BB%E4%BA%A1",
-          "note": "商南命案嫌犯死亡",
+          "title": "保定一立交桥坍塌砸中车辆",
+          "url": "https://s.weibo.com/weibo?q=%E4%BF%9D%E5%AE%9A%E4%B8%80%E7%AB%8B%E4%BA%A4%E6%A1%A5%E5%9D%8D%E5%A1%8C%E7%A0%B8%E4%B8%AD%E8%BD%A6%E8%BE%86",
+          "note": "立交桥坍塌砸中过往车辆",
           "source": ""
         },
         {
-          "title": "全球好物扎堆亮相进博会",
-          "url": "https://s.weibo.com/weibo?q=%E5%85%A8%E7%90%83%E5%A5%BD%E7%89%A9%E6%89%8E%E5%A0%86%E4%BA%AE%E7%9B%B8%E8%BF%9B%E5%8D%9A%E4%BC%9A",
-          "note": "进博会全球商品集中亮相",
+          "title": "6图看进博会磁吸力持续增强",
+          "url": "https://s.weibo.com/weibo?q=6%E5%9B%BE%E7%9C%8B%E8%BF%9B%E5%8D%9A%E4%BC%9A%E7%A3%81%E5%90%B8%E5%8A%9B%E6%8C%81%E7%BB%AD%E5%A2%9E%E5%BC%BA",
+          "note": "进博会吸引力持续增强",
           "source": ""
         },
         {
-          "title": "要求新娘借婚房酒店已致歉拒绝退款",
-          "url": "https://s.weibo.com/weibo?q=%E8%A6%81%E6%B1%82%E6%96%B0%E5%A8%98%E5%80%9F%E5%A9%9A%E6%88%BF%E9%85%92%E5%BA%97%E5%B7%B2%E8%87%B4%E6%AD%89%E6%8B%92%E7%BB%9D%E9%80%80%E6%AC%BE",
-          "note": "酒店借婚房纠纷致歉拒退款",
+          "title": "男子编造寿县可燃烧秸秆谣言被行拘",
+          "url": "https://s.weibo.com/weibo?q=%E7%94%B7%E5%AD%90%E7%BC%96%E9%80%A0%E5%AF%BF%E5%8E%BF%E5%8F%AF%E7%87%83%E7%83%A7%E7%A7%B8%E7%A7%86%E8%B0%A3%E8%A8%80%E8%A2%AB%E8%A1%8C%E6%8B%98",
+          "note": "编造秸秆谣言被行政拘留",
           "source": ""
         },
         {
-          "title": "披哥集体去京东MALL团建",
-          "url": "https://s.weibo.com/weibo?q=%E6%8A%AB%E5%93%A5%E9%9B%86%E4%BD%93%E5%8E%BB%E4%BA%AC%E4%B8%9CMALL%E5%9B%A2%E5%BB%BA",
-          "note": "综艺嘉宾线下团建引关注",
+          "title": "因为画地为牢被辞退了",
+          "url": "https://s.weibo.com/weibo?q=%E5%9B%A0%E4%B8%BA%E7%94%BB%E5%9C%B0%E4%B8%BA%E7%89%A2%E8%A2%AB%E8%BE%9E%E9%80%80%E4%BA%86",
+          "note": "职场话题引发讨论",
           "source": ""
         },
         {
-          "title": "汪苏泷演唱会言论",
-          "url": "https://s.weibo.com/weibo?q=%E6%B1%AA%E8%8B%8F%E6%B3%B7%E6%BC%94%E5%94%B1%E4%BC%9A%E8%A8%80%E8%AE%BA",
-          "note": "歌手演唱会言论引讨论",
+          "title": "淘宝闪购双11爆好价5折起",
+          "url": "https://s.weibo.com/weibo?q=%E6%B7%98%E5%AE%9D%E9%97%AA%E8%B4%AD%E5%8F%8C11%E7%88%86%E5%A5%BD%E4%BB%B75%E6%8A%98%E8%B5%B7",
+          "note": "双11促销信息",
           "source": ""
         }
       ]
@@ -187,39 +193,39 @@
       "title": "X 全球趋势",
       "items": [
         {
-          "title": "Happy Dhanteras",
-          "url": "https://getdaytrends.com/trend/Happy%20Dhanteras/",
-          "note": "印度排灯节相关话题",
+          "title": "DEWTEE ACCESS GRANTED",
+          "url": "https://getdaytrends.com/trend/DEWTEE%20ACCESS%20GRANTED/",
+          "note": "泰星粉丝活动热度",
           "source": ""
         },
         {
-          "title": "#C109",
-          "url": "https://getdaytrends.com/trend/%23C109/",
-          "note": "日本同人活动标签",
+          "title": "#DewTeeFanconD1",
+          "url": "https://getdaytrends.com/trend/%23DewTeeFanconD1/",
+          "note": "粉丝见面会首日话题",
           "source": ""
         },
         {
-          "title": "冬コミ当選",
-          "url": "https://getdaytrends.com/trend/%E5%86%AC%E3%82%B3%E3%83%9F%E5%BD%93%E9%81%B8/",
-          "note": "冬季同人展中签话题",
+          "title": "#BBFanFest2026inKaohsiung",
+          "url": "https://getdaytrends.com/trend/%23BBFanFest2026inKaohsiung/",
+          "note": "高雄粉丝节话题",
           "source": ""
         },
         {
-          "title": "#KademeAffetmez",
-          "url": "https://getdaytrends.com/trend/%23KademeAffetmez/",
-          "note": "土耳其语热门标签",
+          "title": "#そらぱぴあアリ2026",
+          "url": "https://getdaytrends.com/trend/%23%E3%81%9D%E3%82%89%E3%81%B1%E3%81%B4%E3%81%82%E3%82%A2%E3%83%AA2026/",
+          "note": "日本演出活动话题",
           "source": ""
         },
         {
-          "title": "Hayırlı Cumalar",
-          "url": "https://getdaytrends.com/trend/Hay%C4%B1rl%C4%B1%20Cumalar/",
-          "note": "土耳其语周五祝福",
+          "title": "#WS生配信",
+          "url": "https://getdaytrends.com/trend/%23WS%E7%94%9F%E9%85%8D%E4%BF%A1/",
+          "note": "日本直播话题",
           "source": ""
         },
         {
-          "title": "#ShehzadWinsRNF2",
-          "url": "https://getdaytrends.com/trend/%23ShehzadWinsRNF2/",
-          "note": "真人秀获胜话题",
+          "title": "チャンカパーナ",
+          "url": "https://getdaytrends.com/trend/%E3%83%81%E3%83%A3%E3%83%B3%E3%82%AB%E3%83%91%E3%83%BC%E3%83%8A/",
+          "note": "日本娱乐热词",
           "source": ""
         }
       ]
@@ -230,33 +236,33 @@
       "title": "GitHub Trending",
       "items": [
         {
-          "title": "NVIDIA/auto-ontology — Auto Ontology is a Python framework for bui…（2,679 stars…",
+          "title": "NVIDIA/auto-ontology — Auto Ontology is a Python framework for bui…（2,015 stars…",
           "url": "https://github.com/NVIDIA/auto-ontology",
-          "note": "英伟达开源本体构建框架",
+          "note": "英伟达本体构建Python框架",
           "source": ""
         },
         {
-          "title": "vercel-labs/agent-desktop — Computer use CLI for AI agents（2,173 stars today）",
-          "url": "https://github.com/vercel-labs/agent-desktop",
-          "note": "AI代理桌面操作命令行工具",
+          "title": "zed-industries/zed — Code at the speed of thought – Zed is a hig…（306 stars tod…",
+          "url": "https://github.com/zed-industries/zed",
+          "note": "高性能协作代码编辑器",
           "source": ""
         },
         {
-          "title": "D4Vinci/Scrapling — 🕷️ The BEST Web Scraping framework that han…（1,655 stars to…",
-          "url": "https://github.com/D4Vinci/Scrapling",
-          "note": "自适应网页抓取框架",
+          "title": "rust-lang/rust — Empowering everyone to build reliable and e…（192 stars today）",
+          "url": "https://github.com/rust-lang/rust",
+          "note": "Rust语言主仓库",
           "source": ""
         },
         {
-          "title": "mattpocock/skills — Skills for Real Engineers. Straight from my…（2,071 stars to…",
-          "url": "https://github.com/mattpocock/skills",
-          "note": "面向工程师的实用技能集",
+          "title": "react/react — The library for web and native user interfa…（248 stars today）",
+          "url": "https://github.com/react/react",
+          "note": "React前端库",
           "source": ""
         },
         {
-          "title": "lz4/lz4 — Extremely Fast Compression algorithm（23 stars today）",
-          "url": "https://github.com/lz4/lz4",
-          "note": "极快压缩算法库",
+          "title": "mpv-player/mpv — 🎥 Command line media player（37 stars today）",
+          "url": "https://github.com/mpv-player/mpv",
+          "note": "命令行视频播放器",
           "source": ""
         }
       ]
@@ -267,21 +273,21 @@
       "title": "Facebook / Meta 动态",
       "items": [
         {
+          "title": "Design the Muse App, Just for You",
+          "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+          "note": "Muse应用支持个性化定制",
+          "source": ""
+        },
+        {
           "title": "Give Your Muse a Voice",
           "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
-          "note": "Meta推出AI语音虚拟形象",
+          "note": "Muse新增AI语音与虚拟形象",
           "source": ""
         },
         {
           "title": "WhatsApp Events Brings People Together Beyond the Group Chat",
           "url": "https://about.fb.com/news/2026/11/whatsapp-events-brings-people-together-beyond-the-group-chat/",
-          "note": "WhatsApp新增活动功能",
-          "source": ""
-        },
-        {
-          "title": "The Future Is for Everyone: Meta and CNIB Partner to Support Canadians Who Are…",
-          "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision/",
-          "note": "Meta与CNIB合作支持视障者",
+          "note": "WhatsApp推出活动功能",
           "source": ""
         }
       ]
@@ -292,33 +298,33 @@
       "title": "中文热榜",
       "items": [
         {
-          "title": "2027 年放假安排出炉，9 天春节假期回归，成近年调休天数最少年份，你有哪些期待？假期准备做什么？",
-          "url": "https://www.zhihu.com/question/2101722006861385895",
-          "note": "2027年放假安排公布",
+          "title": "政策严控「速成车」，工信部第 413 批新车申报量锐减，新势力集体沉默，「速成车」时代要结束了吗？",
+          "url": "https://www.zhihu.com/question/2101996866988675962",
+          "note": "新车申报锐减监管收紧",
           "source": ""
         },
         {
-          "title": "患者被三甲医院医生推荐去三乙医院，花费 2 万多元又被告知治不了只退四千元，这是什么套路？暴露出什么问题？",
-          "url": "https://www.zhihu.com/question/2101364650180700119",
-          "note": "转诊收费争议暴露医疗问题",
+          "title": "特斯拉宣布终止 Cybertruck 生产，扩大 Cybercab 的产能，怎样解读这一调整？",
+          "url": "https://www.zhihu.com/question/2102306579311588297",
+          "note": "特斯拉停产Cybertruck转产",
           "source": ""
         },
         {
-          "title": "反中乱港分子黄之锋再判 10 年，哪些信息值得关注？带来哪些警示？",
-          "url": "https://www.zhihu.com/question/2101651157710128349",
-          "note": "黄之锋案再判十年",
+          "title": "男子 5 年入职 25 家公司「表演式上班」骗薪 13 万，此类骗局为何长久以来都没能被公司发现？",
+          "url": "https://www.zhihu.com/question/2101692390444642514",
+          "note": "表演式上班骗薪案例",
           "source": ""
         },
         {
-          "title": "C 罗官宣从葡萄牙国家队正式退役，如何评价此事，他为何会选择在此时退役？",
-          "url": "https://www.zhihu.com/question/2101742566919992358",
-          "note": "C罗宣布国家队退役",
+          "title": "男子收 1.98 万误转账约在派出所归还却遭起诉，法院认定不当得利冻结其账户资金，怎样从法律角度解读？",
+          "url": "https://www.zhihu.com/question/2102313430409658570",
+          "note": "误转账归还不当得利纠纷",
           "source": ""
         },
         {
-          "title": "如何看待北京交通大学官方表态，雄安校区已被明确为学校的唯一主校区？",
-          "url": "https://www.zhihu.com/question/2101691958401971142",
-          "note": "北交大雄安校区定位明确",
+          "title": "谷爱凌称「没有谁会因吃苦而获奖，不要歌颂牺牲」，如何评价这一观点？",
+          "url": "https://www.zhihu.com/question/2102027001586511991",
+          "note": "谷爱凌谈吃苦与牺牲观点",
           "source": ""
         }
       ]
